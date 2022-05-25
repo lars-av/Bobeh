@@ -1,5 +1,5 @@
 <footer class="content-info">
   <div class="container">
-    Footer stuff! 
+    Footer stuff! and something from Samuel
   </div>
 </footer>
