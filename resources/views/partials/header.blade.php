@@ -8,11 +8,11 @@
     </nav>
   </div>
 
-  @php $house_list = Departments::House(-1) @endphp
+  {{-- @php $house_list = Departments::House(-1) @endphp
     @foreach ($house_list as $house)
     {{ $house['title'] }}
     {{ $house['link'] }}
     @dump($house['link'] )
     @endforeach
-    
+     --}}
 </header>
