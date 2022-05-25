@@ -1,0 +1,123 @@
+//Header section
+
+.flexContainerFp {
+  display: flex;
+  width: 100%;
+  align-items: center;
+
+  @include bp(tabletportsmall) {
+    flex-direction: column;
+  }
+
+  h1 {
+    max-width: 16ch;
+  }
+
+  img {
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: inline-block;
+    border-radius: 0 0 0 $border-radius-large;
+  }
+}
+
+.flexChildFp {
+  &:first-child {
+    max-width: 40vw;
+
+    @include bp(tabletportsmall) {
+      max-width: 100%;
+    }
+  }
+}
+
+//Case worker - Beboer cards
+
+.flex-container-entry {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1rem, 5%, 3rem);
+
+  @include bp(tabletportsmall) {
+    justify-content: center;
+  }
+}
+
+.card {
+  max-width: 300px;
+
+  img {
+    width: 100%;
+    display: block;
+    border-radius: $border-radius-small $border-radius-small 0 0;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  p {
+    width: 100%;
+    background-color: $brand-primary;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 0 0 $border-radius-small $border-radius-small;
+  }
+}
+
+.about-fond-container {
+  max-width: 50ch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+//Target group
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-divider-description {
+  max-width: 60ch;
+}
+
+//Tabs - Target group
+.tab-content {
+  display: none;
+}
+
+.tab-content.active1 {
+  display: block;
+}
+
+.tab.active1 {
+  color: $brand-primary;
+}
+
+.tab-button {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.tab-information {
+  li {
+    list-style-type: none;
+    font-size: 1rem;
+    margin: 1rem 0;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+.core-value-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.core-value-child {
+  background-color: green;
+}
+
+.text-container-flex {
+  max-width: 40ch;
+}

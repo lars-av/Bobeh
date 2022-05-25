@@ -1,0 +1,15 @@
+@import "common/mixins";
+
+/** Colors */
+$brand-primary:              #35ab99;
+$brand-primary-highlighted:  #ee6745;
+$brand-secondary:            rgb(178, 178, 230);
+$document-background-color:  grey;
+
+/** Box Model  */
+$spacer:                2rem;
+$spacer-small:          1rem;
+
+/** Border radius */
+$border-radius-large: 50px;
+$border-radius-small: 20px;

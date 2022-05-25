@@ -1,0 +1,96 @@
+/** Font sizes */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: $brand-primary;
+
+  @include bp(tablet) {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: white;
+
+  &:visited {
+    color: white;
+  }
+}
+
+strong {
+  font-weight: 600;
+}
+
+/** Buttons */
+
+button {
+  background: none;
+  border: none;
+}
+
+.btnRounded {
+  border-radius: 40px;
+  background-color: $brand-primary;
+  padding: 1.3em 1.5em;
+  color: white;
+  transition: 0.2s;
+  display: inline-block;
+
+  &:hover {
+    background-color: $brand-primary-highlighted;
+  }
+}
+
+//Wrapper creation
+
+.wrapper-small {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+
+  @include bp(tabletportsmall) {
+    padding: 0 clamp(0.2rem, 2%, 0.5rem);
+  }
+}
+
+.wrapper-large {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+
+  @include bp(tabletportsmall) {
+    padding: 0 clamp(0.2rem, 2%, 0.5rem);
+  }
+}

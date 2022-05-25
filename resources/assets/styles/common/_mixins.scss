@@ -1,0 +1,61 @@
+@mixin bp($point) {
+  @if $point == macny {
+    @media (max-width: 1690px) {
+      @content;
+    }
+  }
+
+  @else if $point == desktop {
+    @media (max-width: 1600px) {
+      @content;
+    }
+  }
+
+  @else if $point == smalldesktop {
+    @media (max-width: 1355px) {
+      @content;
+    }
+  }
+
+  @else if $point == tabletland {
+    @media (max-width: 1280px) {
+      @content;
+    }
+  }
+
+  @else if $point == tablet {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+
+  @else if $point == tabletport {
+    @media (max-width: 834px) {
+      @content;
+    }
+  }
+
+  @else if $point == tabletportsmall {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @else if $point == phone {
+    @media (max-width: 415px) {
+      @content;
+    }
+  }
+
+  @else if $point == phonesmall {
+    @media (max-width: 376px) {
+      @content;
+    }
+  }
+
+  @else if $point == phonebaby {
+    @media (max-width: 320px) {
+      @content;
+    }
+  }
+}
