@@ -10,6 +10,7 @@ import common from './routes/common';
 import home from './routes/home';
 import aboutUs from './routes/about';
 import caseworker from './routes/caseworker';
+import residentsAndRelatives from './routes/residents-and-relatives'
 
 /** Populate Router instance with DOM routes */
 const routes = new Router({
@@ -19,8 +20,10 @@ const routes = new Router({
   home,
   // About Us page, note the change from about-us to aboutUs.
   aboutUs,
-  //lars
+  //caseworker
   caseworker,
+  //residents and relatives page
+  residentsAndRelatives,
 });
 
 // Load Events
