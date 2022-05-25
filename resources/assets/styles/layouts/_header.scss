@@ -1,3 +1,31 @@
 header {
-  background-color: rgb(219, 255, 219);
+  background-color: rgb(255, 255, 255);
+  color: black;
+  box-shadow: 0 0 12px 1px black;
+  margin-bottom: 0.25rem;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  a {
+    color: black;
+  }
+
+  .nav-primary {
+    display: flex;
+
+    .nav {
+      list-style-type: none;
+      padding: 1rem 0;
+      display: flex;
+
+      li {
+        margin: 0 1rem;
+      }
+    }
+  }
+}
+
