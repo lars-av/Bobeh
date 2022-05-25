@@ -1,14 +1,27 @@
 @extends('layouts.app')
-
 @section('content')
-  @include('partials.page-header')
-  @include('partials.testpartial')
-  @include('partials/residents.larsisgay')
+<input type="checkbox" id="checkBox" name="ticked" onClick= >
 
-  <div>
-    <h1>YOOYOYOYOY</h1>
+{{-- Side navigation --}}
+  <div class="wrapper-large">
+    @if ("true" == "true")
+    <div class="wrap-side-nav">Div1</div>
+    @endif
+
+    {{-- Content --}}
+    <div  @if("true" == "true") class="wrap-side-content" @else class="wrap-only-content" @endif>
+      @include('partials/residents.hero-text')
+      @include('partials/residents.social-life')
+      @include('partials/residents.day-to-day')
+
+    </div>
   </div>
 @endsection
+
+<script>
+
+
+</script>
 
 
 
