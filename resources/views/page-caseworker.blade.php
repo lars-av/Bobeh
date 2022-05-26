@@ -1,10 +1,24 @@
 @extends('layouts.app')
-
 @section('content')
-  @include('partials.page-header')
+<input type="checkbox" id="checkBox" name="ticked" onClick= >
 
-  <div>
-    <h3>Caseworker</h3>
+{{-- Side navigation --}}
+  <div class="wrapper-large">
+    @if ("true" == "true")
+    <div class="wrap-side-nav">Div1</div>
+    @endif
+
+    {{-- Content --}}
+    <div  @if("true" == "true") class="wrap-side-content" @else class="wrap-only-content" @endif>
+      @include('partials/caseworker.targetgroup')
+      @include('partials/caseworker.actionplan')
+      @include('partials/caseworker.pedaprac')
+      @include('partials/caseworker.reachout')
+    </div>
   </div>
-
 @endsection
+
+<script>
+
+
+</script>

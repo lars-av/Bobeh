@@ -1,1 +1,166 @@
-//remember to change your tabs to 2 spaces
+.infographics-case {
+  margin: 4rem 0 0 0;
+  width: 100%;
+
+  #process {
+    padding: 4rem;
+    background-color: blue;
+  }
+
+  h3 {
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .infographics-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+
+    .infographic-column {
+      display: flex;
+      flex-direction: column;
+      max-width: 33%;
+
+      ul {
+        margin: 1rem 1rem;
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.4rem;
+        list-style-type: none;
+
+        li {
+          margin: 0.75rem 0;
+          font-size: 1.1rem;
+        }
+
+        li::before {
+          content: "\2022";
+          color: $brand-primary;
+          width: 1rem;
+          font-weight: bold;
+          margin-left: -0.5rem;
+          display: inline-block;
+        }
+      }
+    }
+
+    .infographic-process {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 33%;
+      align-items: center;
+
+      h5 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        margin-top: 1rem;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.8rem;
+      }
+    }
+  }
+
+  h4 {
+    font-size: 2rem;
+    color: $brand-primary;
+  }
+}
+
+#caseworker-btn {
+  margin-top: 1rem;
+}
+
+.image-half-width {
+  width: 100%;
+
+  img {
+    object-fit: cover;
+    width: 50%;
+    height: 400px;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  .ourprocess-wrap {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .text-field-1col {
+    width: 50%;
+    align-self: center;
+  }
+
+  h3 {
+    margin: 1rem 0;
+  }
+
+  .h4-caseworker {
+    color: black;
+    margin: 1rem 0;
+  }
+
+  .btnRounded {
+    margin: 2rem 0;
+  }
+}
+
+.half-section-paragraph {
+  width: 50%;
+
+  h3 {
+    margin: 4rem 0 1rem 0;
+  }
+
+  .tilbudportal-link {
+    display: flex;
+    margin: 1rem 0;
+    color: $brand-primary;
+    max-width: 50px;
+  }
+}
+
+.pedaprac-methods {
+  margin: 2rem 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 2rem;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.reachout-section {
+  background-color: $brand-primary;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  color: #fff;
+
+  h6 {
+    padding: 0.5rem 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .flex-wrapper {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .text {
+    width: 70%;
+  }
+
+  .reachout-button {
+    width: 30%;
+  }
+
+  #caseworker-btn-3 {
+    border: 2px solid #fff;
+    width: 100%;
+    font-weight: 600;
+  }
+}
