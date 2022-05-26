@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 .header-text {
   margin: 6rem 0;
 }
@@ -32,12 +36,13 @@
 }
 
 .infographics {
-  margin: 4rem 0;
+  margin: 3rem 0;
   width: 100%;
 
   #process {
     padding: 4rem;
-    background-color: blue;
+    border-radius: 1rem;
+    background-color: $brand-primary;
   }
 
   h3 {
@@ -102,10 +107,15 @@
     color: $brand-primary;
   }
 
-  .fa-person,
-  .fa-screwdriver-wrench,
-  .fa-seedling {
+  .icon {
     font-size: 3rem;
+    margin: 0 0 1rem 0;
     color: $brand-primary;
+  }
+
+  .icon-process {
+    font-size: 4rem;
+    margin: 0 0 1rem 0;
+    color: white;
   }
 }

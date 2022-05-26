@@ -5,7 +5,16 @@
 {{-- Side navigation --}}
   <div class="wrapper-large">
     @if ("true" == "true")
-    <div class="wrap-side-nav">Div1</div>
+    <div class="wrap-side-nav">
+      <div class="side-nav">
+        <ul>
+           <a href="#social-life"><li class="anchor" >Social Life</li></a>
+           <a href="#day-to-day"><li class="anchor" >Day to Day Life</li></a>
+           <a href="#process-of-applying"><li class="anchor" >Process of applying</li></a>
+           <a href="#"><li class="anchor" >An item on the page4</li></a>
+        </ul>
+      </div>
+    </div>
     @endif
 
     {{-- Content --}}
@@ -20,7 +29,12 @@
 @endsection
 
 <script>
+// const link = document.querySelectorAll(".anchor")
+console.log(window.onload)
 
+link.addEventListener("click", (e) => {
+ e.target.classList.add('active')
+})
 
 </script>
 

@@ -19,6 +19,16 @@ add_action('wp_enqueue_scripts', function () {
     }
 }, 100);
 
+// Adding a custom javascript file
+
+add_action('wp_enqueue_scripts', function () {
+    wp_enqueue_script('sage/residents.js', asset_path('scripts/residents.js'), ['jquery'], null, true);
+
+    if(is_page('residents-and-relatives')){
+        wp_enqueue_script('sage/residents.js', asset_path('scripts/residents.js'), ['jquery'], null, true);
+    }
+});
+
 /**
  * Theme setup
  */
