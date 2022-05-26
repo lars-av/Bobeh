@@ -1,4 +1,4 @@
-<section class="image-full-width">
+<section class="image-full-width" id="day-to-day">
   <h2>The day to day life at our houses </h2>
   <img src="http://bobehandling.test/wp-content/uploads/2022/05/Purkaervej-scaled.jpg" alt="people-smiling">
 
@@ -15,7 +15,7 @@
     <div class="infographics-grid">
       <div class="infographic-column">
         <h4>
-          <i class="fa-solid fa-person"></i>
+          <i class="fa-solid fa-person icon"></i>
           Social skills
         </h4>
         <ul>
@@ -26,7 +26,7 @@
       </div>
       <div class="infographic-column">
         <h4>
-          <i class="fa-solid fa-seedling"></i>
+          <i class="fa-solid fa-seedling icon"></i>
           Responsibility
         </h4>
         <ul>
@@ -37,7 +37,7 @@
       </div>
       <div class="infographic-column">
         <h4>
-          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <i class="fa-solid fa-screwdriver-wrench icon"></i>
           Life Skills
         </h4>
         <ul>

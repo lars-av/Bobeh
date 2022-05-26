@@ -6,6 +6,9 @@
     ],
     "customizer": [
       "./scripts/customizer.js"
+    ],
+    "residents":[
+      "./scripts/residents.js"
     ]
   },
   "publicPath": "/app/themes/BobehandlingBlokhus",
