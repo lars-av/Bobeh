@@ -13,6 +13,7 @@
       @include('partials/residents.hero-text')
       @include('partials/residents.social-life')
       @include('partials/residents.day-to-day')
+      @include('partials/residents.process')
 
     </div>
   </div>

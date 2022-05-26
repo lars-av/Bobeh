@@ -117,10 +117,15 @@ section {
   margin: 2rem;
 
   h1 {
-    max-width: 350px;
+    max-width: 20ch;
   }
 }
 
 .text-field {
-  max-width: 50%;
+  column-count: 2;
+  column-gap: 2rem;
+
+  @include bp(tablet) {
+    column-count: 1;
+  }
 }
