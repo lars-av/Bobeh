@@ -85,12 +85,47 @@ button {
 }
 
 .wrapper-large {
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin: 4rem;
+
+  .wrap-side-nav {
+    width: 30%;
+  }
+
+  .wrap-side-content {
+    width: 70%;
+    margin: 2rem;
+  }
+
+  .wrap-only-content {
+    width: 100%;
+  }
 
   @include bp(tabletportsmall) {
     padding: 0 clamp(0.2rem, 2%, 0.5rem);
+  }
+}
+//sections
+section {
+  margin: 4rem 0;
+}
+
+//Header of the section
+.header-text {
+  margin: 2rem;
+
+  h1 {
+    max-width: 20ch;
+  }
+}
+
+.text-field {
+  column-count: 2;
+  column-gap: 2rem;
+
+  @include bp(tablet) {
+    column-count: 1;
   }
 }
