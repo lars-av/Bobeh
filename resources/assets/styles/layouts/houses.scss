@@ -1,0 +1,51 @@
+.two-sections-wrap {
+  display: flex;
+  gap: 5rem;
+
+  p {
+    width: 100%;
+    padding: 1rem 0;
+    margin: 0;
+  }
+
+  h6 {
+    width: 50%;
+    padding: 1rem 0;
+    font-size: 16px;
+    font-weight: 200;
+  }
+
+  li {
+    list-style-type: none;
+    padding: 1rem 0;
+  }
+
+  .address-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+}
+
+.image-full-width {
+  .abouthouse-img {
+    height: 400px;
+  }
+
+  p {
+    padding: 2rem 0;
+  }
+
+  .image-text {
+    padding: 0;
+    margin: 0;
+  }
+
+  .image-text p {
+    padding-top: 0;
+  }
+}
+
+.wrap.container {
+  display: block;
+}
