@@ -11,7 +11,7 @@
            <a href="#social-life"><li class="anchor" >Social Life</li></a>
            <a href="#day-to-day"><li class="anchor" >Day to Day Life</li></a>
            <a href="#process-of-applying"><li class="anchor" >Process of applying</li></a>
-           <a href="#"><li class="anchor" >An item on the page4</li></a>
+           <a href="#self-determination"><li class="anchor" >Self Determiation</li></a>
         </ul>
       </div>
     </div>
@@ -23,6 +23,7 @@
       @include('partials/residents.social-life')
       @include('partials/residents.day-to-day')
       @include('partials/residents.process')
+      @include('partials/residents.self-determination')
 
     </div>
   </div>

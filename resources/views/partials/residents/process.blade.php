@@ -1,7 +1,7 @@
 <section id="process-of-applying">
   <h2>Process of applying</h2>
-  <p class="">Sometime individuals would like to apply for a housing but we cant help  unless they follow the process.</p>
-  <div class="infographics">
+  <p class="text-field">Sometime individuals would like to apply for a housing but we cant help  unless they follow the process.</p>
+  <div class="infographics" id="process-banner">
     <div class="infographics-grid" id="process">
       <div class="infographic-process">
         <i class="fa-solid fa-user-tie icon-process"></i>
@@ -25,4 +25,6 @@
         <p>After we review the application, we evaluate if we are the right fit for you and you can move in.</p>
       </div>
     </div>
+    <p class="text-field" style="margin-bottom: 0.5rem;">For more information feel free to reach out and ask.</p>
+   <button class="btnRounded">Contact us</button>
 </section>
