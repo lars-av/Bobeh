@@ -27,7 +27,7 @@
 }
 
 .slider-image-container {
-  max-width: 60%;
+  min-width: 60%;
 
   @include bp(tabletportsmall) {
     max-width: 100%;
@@ -35,15 +35,35 @@
 }
 
 .slider-text-container {
-  max-width: 40%;
-  padding: $spacer-small;
+  min-width: 30%;
+  max-width: 30%;
+  padding: $spacer $spacer-small;
   border-radius: $border-radius-small 0 0 $border-radius-small;
-  background-color: rgb(212, 212, 212);
+  background-color: $section-blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: $spacer-small;
 
   @include bp(tabletportsmall) {
     max-width: 100%;
     border-radius: 0 0 $border-radius-small $border-radius-small;
   }
+
+  a {
+    color: white;
+    align-self: flex-start;
+  }
+
+  h3 {
+    color: $brand-primary;
+  }
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  gap: $spacer-small;
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
@@ -54,4 +74,12 @@
 .swiper-pagination .swiper-pagination-bullet {
   border-radius: 0;
   width: 40px;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -40px;
+
+  @include bp(tabletportsmall) {
+    top: -40px;
+  }
 }
