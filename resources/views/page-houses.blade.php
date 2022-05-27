@@ -12,6 +12,7 @@
     <div  @if("true" == "true") class="wrap-side-content" @else class="wrap-only-content" @endif>
       @include('partials/houses.house-intro')
       @include('partials/houses.about-house')
+      @include('partials/houses.activities')
     </div>
   </div>
 @endsection
