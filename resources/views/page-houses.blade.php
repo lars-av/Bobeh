@@ -1,2 +1,11 @@
-<h1>I dont have a scss file yet make me 
-</h1>
+@extends('layouts.app')
+
+@section('content')
+<div class="wrap-only-content">
+  @include('partials/houses.hero-text')
+  @include('partials/houses.cards')
+
+</div>
+
+
+@endsection
