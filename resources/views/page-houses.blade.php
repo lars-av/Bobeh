@@ -13,6 +13,8 @@
       @include('partials/houses.house-intro')
       @include('partials/houses.about-house')
       @include('partials/houses.activities')
+      @include('partials/houses.responsibility-section')
+      @include('partials/houses.living-conditions')
     </div>
   </div>
 @endsection
