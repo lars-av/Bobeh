@@ -72,13 +72,43 @@
     <h2>Our target group HC</h2>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit eos repudiandae a accusantium ullam aperiam assumenda? Dignissimos laudantium quaerat dolor! Fugiat unde architecto quia tenetur sapiente molestiae delectus debitis modi.</p>
     </div>
-    @php $i = 1 @endphp
-    @php $x = 1 @endphp
-    @php $targetgroup = get_field('target_group_list') @endphp
+
+
+<!--Tabs v2-->
+
+    <div class="tabs-container">
+
+        <ul class="tabs">
+            @php $i = 1 @endphp
+            @php $x = 1 @endphp
+            @php $targetgroup = get_field('target_group_list') @endphp
     
+            @foreach ($targetgroup as $tg)
+            <li class="tab-link current" data-tab="tab-{{i}}">{{ $tg['target_group_list_title'] }}</li>
+            <button class="tab active{{$i}} tab-button" data-toggle-target=".tab-content-{{$i}}"> {{ $tg['target_group_list_title'] }}</button>
+            @php $i++ @endphp
+            @endforeach
+
+            <li class="tab-link" data-tab="tab-3">Tab Three</li>
+            <li class="tab-link" data-tab="tab-4">Tab Four</li>
+        </ul>
+    
+        <div id="tab-1" class="tab-content current">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        <div id="tab-2" class="tab-content">
+             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div id="tab-3" class="tab-content">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+        <div id="tab-4" class="tab-content">
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+
     <!-- Tabs -->
     <div class="target-group-tabs">
-        <div class="button-container">
+    <div class="button-container">
     @foreach ($targetgroup as $tg)
     <button class="tab active{{$i}} tab-button" data-toggle-target=".tab-content-{{$i}}"> {{ $tg['target_group_list_title'] }}</button>
     @php $i++ @endphp

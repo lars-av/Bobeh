@@ -102,6 +102,10 @@
   @include bp(tablet) {
     grid-template-columns: 200px 200px;
   }
+
+  @include bp(phone) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card {
@@ -139,10 +143,18 @@
 .banner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: $brand-primary-highlighted;
   padding: 0.5rem 1rem;
-  border-radius: $border-radius-small;
+  border-radius: 10px;
   margin-bottom: 2rem;
+
+  a {
+    color: white;
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 10px;
+  }
 }
 
 .news-card-container {
@@ -151,12 +163,12 @@
   gap: $spacer;
 
   @include bp(tabletportsmall) {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
 }
 
 .news-card {
-  border: 1px red solid;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
   border-radius: $border-radius-small;
 
   img {
@@ -170,7 +182,8 @@
 }
 
 .news-card-text {
-  padding: 0.5rem;
+  padding: 1rem;
+  min-height: 100px;
   border-radius: 0 0 $border-radius-small $border-radius-small;
 }
 
@@ -192,31 +205,25 @@
   gap: $spacer-small;
 }
 
-//Tabs - Target group
+//new tabs
+
+.tabs {
+  display: flex;
+}
+
+ul.tabs li.current {
+  background: #ededed;
+  color: #222;
+}
+
 .tab-content {
   display: none;
+  background: #ededed;
+  padding: 15px;
 }
 
-.tab-content.active1 {
-  display: block;
-}
-
-.tab.active1 {
-  color: $brand-primary;
-}
-
-.tab-button {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.tab-information {
-  li {
-    list-style-type: none;
-    font-size: 1rem;
-    margin: clamp(1rem, 4vh, 1.5rem) 0;
-    font-family: "Montserrat", sans-serif;
-  }
+.tab-content.current {
+  display: inherit;
 }
 
 //Core values
