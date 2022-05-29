@@ -99,13 +99,20 @@ button {
   justify-content: center;
   margin: 4rem;
 
+  @include bp(tabletportsmall) {
+    margin: 1rem;
+  }
+
   .wrap-side-nav {
     width: 20%;
     display: flex;
     justify-content: center;
 
+    @include bp(tabletland) {
+      display: none;
+    }
+
     .side-nav {
-      width: 100%;
       height: max-content;
       border-right: 2px solid $brand-primary;
       padding: 1rem 2rem;
@@ -122,12 +129,12 @@ button {
 
         li {
           padding: 1rem;
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           margin: 0.5rem 0;
           transition: all 0.5s ease;
 
           @include bp(tabletland) {
-            font-size: 0.95rem;
+            font-size: 1.25rem;
           }
 
           .anchor {
@@ -147,7 +154,8 @@ button {
     margin: 0 4rem;
 
     @include bp(tabletland) {
-      width: 80%;
+      width: 100%;
+      margin: 0 2rem;
     }
   }
 
@@ -176,6 +184,7 @@ section {
 .text-field {
   column-count: 2;
   column-gap: 2rem;
+  line-height: 1.75rem;
 
   @include bp(tablet) {
     column-count: 1;
