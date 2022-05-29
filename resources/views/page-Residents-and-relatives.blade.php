@@ -13,6 +13,7 @@
            <a href="#process-of-applying"><li class="anchor" >Process of applying</li></a>
            <a href="#self-determination"><li class="anchor" >Self Determiation</li></a>
            <a href="#duty-of-care"><li class="anchor" >Duty of care</li></a>
+           <a href="#involvement-in-development"><li class="anchor" >Involvement In Development</li></a>
         </ul>
       </div>
     </div>
@@ -26,6 +27,7 @@
       @include('partials/residents.process')
       @include('partials/residents.self-determination')
       @include('partials/residents.duty-of-care')
+      @include('partials/residents.involvement-in-development')
 
     </div>
   </div>

@@ -6,6 +6,10 @@
   margin: 6rem 0;
 }
 
+.line-height {
+  line-height: 1.5rem;
+}
+
 .image-full-width {
   max-width: 100%;
 
@@ -37,6 +41,44 @@
 
 #process-banner {
   margin: 2rem 0;
+}
+
+.duty-of-care {
+  display: flex;
+  gap: 2rem;
+
+  h1 {
+    margin: 1rem 0;
+  }
+
+  .image {
+    width: 50%;
+  }
+
+  .info {
+    width: 50%;
+    margin-left: 1rem;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    ul {
+      li {
+        font-size: 1.1rem;
+        margin: 1.25rem 0;
+        line-height: 1.2rem;
+        padding: 0.75rem 0.75rem 0 0;
+      }
+    }
+
+    button {
+      flex-grow: shrink;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
 }
 
 .infographics {
@@ -174,18 +216,32 @@
   }
 }
 
-.duty-of-care {
-  display: flex;
+.involvement-steps {
+  .involvement-step-child {
+    .involvement-card {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
 
-  .image {
-    width: 50%;
-  }
+      div {
+        h3 {
+          color: $brand-primary;
+          margin: 0.25rem 0;
+        }
 
-  .info {
-    width: 50%;
-  }
+        p {
+          max-width: 75%;
+          line-height: 1.5rem;
+        }
+      }
 
-  img {
-    width: 100%;
+      img {
+        width: 40%;
+        padding-right: 10rem;
+      }
+    }
   }
 }
+
