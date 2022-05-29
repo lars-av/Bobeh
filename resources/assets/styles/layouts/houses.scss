@@ -60,7 +60,7 @@
       background: linear-gradient(to top, $brand-primary, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-end;
 
       p {
         margin: 2rem;
