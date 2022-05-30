@@ -1,4 +1,4 @@
-<section>
+<section class="no-margin">
     <div class="flex-frontpage">
     <div class="flex-container-frontpage flex-center text-container-frontpage">
         <h1>Bo-og Behandlingscenter Blokhus</h1>

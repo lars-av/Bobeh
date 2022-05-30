@@ -32,39 +32,110 @@
  */
 
 header {
-  position: sticky;
-  top: 0;
+  z-index: 999;
 }
 
-.banner {
-  background-color: green;
+.background-frontpage-nav {
+  background-color: $document-background-color !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px, rgba(0, 0, 0, 0.06) 0 2px 4px -1px;
+}
 
-  .container {
+.page-header {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  position: fixed;
+  top: 0;
+  height: 40px;
+  color: black;
+  width: 100%;
+  line-height: 40px;
+
+  a {
+    color: black;
+  }
+
+  &__top {
     display: flex;
-    height: 80px;
-    align-items: center;
     justify-content: space-between;
+  }
+
+  &__toggle {
+    font-size: 2em;
+    color: black;
+  }
+}
+
+.navigation {
+  opacity: 0.5;
+  height: 0;
+  overflow: hidden;
+  transition: 0.7s;
+
+  ul {
+    background-color: none;
+
+    @include bp(tablet) {
+      background-color: $document-background-color;
+    }
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  &__item {
+    background: #052433;
+    padding: 0 16px;
+  }
+
+  &--visible {
+    opacity: 1;
+    height: auto;
   }
 }
 
 #menu-primary-navigation {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   gap: 1rem;
 
   @include bp(tablet) {
     flex-direction: column;
   }
-
-  li {
-    list-style: none;
-  }
 }
 
-.navbar-icon {
-  display: none;
+@media (min-width: 1024px) {
+  .page-header {
+    display: flex;
 
-  @include bp(tablet) {
+    &__top {
+      margin-right: auto;
+    }
+
+    &__top,
+    &__bottom {
+      display: block;
+    }
+
+    &__toggle {
+      display: none;
+    }
+  }
+
+  .navigation {
     display: block;
+    opacity: 1;
+    height: auto;
+
+    &__item {
+      opacity: 0.8;
+      display: inline-block;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+      }
+    }
   }
 }
