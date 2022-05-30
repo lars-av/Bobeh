@@ -1,0 +1,134 @@
+.two-sections-wrap {
+  display: flex;
+  gap: 5rem;
+
+  p {
+    width: 100%;
+    padding: 1rem 0;
+    margin: 0;
+  }
+
+  h6 {
+    width: 50%;
+    padding: 1rem 0;
+    font-size: 16px;
+    font-weight: 200;
+  }
+
+  li {
+    list-style-type: none;
+    padding: 1rem 0;
+  }
+
+  .address-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+}
+
+.image-full-width {
+  .abouthouse-img {
+    height: 400px;
+  }
+
+  p {
+    padding: 2rem 0;
+  }
+
+  .image-text {
+    padding: 0;
+    margin: 0;
+  }
+
+  .image-text p {
+    padding-top: 0;
+  }
+}
+
+.activity-one {
+  display: flex;
+  padding: 1rem 0;
+  gap: 3rem;
+
+  .activity-text {
+    width: 75%;
+  }
+}
+
+h3 {
+  padding: 0 0 1rem 0;
+}
+
+.activity-two {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 1rem 0;
+  gap: 3rem;
+
+  .activity-text {
+    width: 75%;
+  }
+}
+
+.house-activities-img {
+  width: 80%;
+  height: 215px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.help-boxes {
+  display: flex;
+  gap: 5rem;
+  margin: 2rem 0;
+
+  .box-1 {
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid $brand-primary;
+
+    ul {
+      list-style-type: circle;
+    }
+
+    h3 {
+      color: $brand-primary;
+      text-align: center;
+    }
+  }
+}
+
+.living-conditions {
+  .paragraph-1 {
+    margin: 1rem 0;
+  }
+
+  .paragraph-2 {
+    margin: 1rem 0;
+  }
+
+  .living-condition-section-2 {
+    display: flex;
+    gap: 2em;
+  }
+
+  .living-conditions-img-2 {
+    height: 200px;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+.living-conditions-img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.wrap.container {
+  display: block;
+}
+
