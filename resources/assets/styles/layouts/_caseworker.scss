@@ -164,3 +164,44 @@
     font-weight: 600;
   }
 }
+
+.contact-staff {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem 0;
+
+  .contactperson-img {
+    width: 50%;
+  }
+
+  .person {
+    background-color: #35ab99;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+
+  h4 {
+    padding: 0.5rem 0;
+  }
+
+  h6 {
+    padding: 0.5rem 0;
+  }
+}
+
+.contact-house {
+  display: flex;
+  gap: 2rem;
+
+  .all-houses {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-self: center;
+  }
+
+  h6 {
+    padding: 0.5rem 0;
+  }
+}
