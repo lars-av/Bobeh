@@ -7,7 +7,10 @@
         <p>Spots</p>
       </div>
       <div class="department-card-hovered">
+        <h2>Purkærhuset</h2>
+        <h4>Available spots: 2</h4>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias aliquam dignissimos quam eligendi reprehenderit quas, officiis totam minima libero perspiciatis?</p>
+        <button class="btn-card">View house</button>
       </div>
     </div>
     <div class="department-card">
