@@ -124,12 +124,12 @@ button {
 
     .side-nav {
       height: max-content;
-      border-right: 2px solid $brand-primary;
+      border-right: 1px solid rgba(0, 0, 0, 0.25);
       padding: 1rem 2rem;
       position: -webkit-sticky; /* Safari */
-      position: sticky;
+      position: fixed;
       margin: 6rem 0;
-      top: 10%;
+      top: 15%;
 
       a {
         color: black;
@@ -143,8 +143,8 @@ button {
 
         li {
           padding: 1rem;
-          font-size: 1.3rem;
-          margin: 0.5rem 0;
+          font-size: 1.25rem;
+          margin: 0.25rem 0;
           transition: all 0.5s ease;
 
           @include bp(tabletland) {
