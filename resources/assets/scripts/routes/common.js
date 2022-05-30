@@ -6,12 +6,15 @@ export default {
   },
   finalize() {
 
-    $('.navbar-icon').click(function(){
-      $(this).toggleClass('active');
-      $('.navbar-menu nav').toggleClass('active');
-    });
-    // JavaScript to be fired on all pages, after page specific JS is fired
-
+    $(function() {
+      $(window).on('scroll', function() {
+          if($(window).scrollTop() > 50) {
+              $('.header').addClass('background-frontpage-nav');
+          } else {
+             $('.header').removeClass('background-frontpage-nav');
+          }
+      });
+  });
   },
 };
 
