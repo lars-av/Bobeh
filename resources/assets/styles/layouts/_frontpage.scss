@@ -140,7 +140,7 @@
 
 //News section
 
-.banner {
+.banner-news {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -211,7 +211,7 @@
   display: flex;
 }
 
-ul.tabs li.current {
+ul.tabs li.current1 {
   background: #ededed;
   color: #222;
 }
@@ -222,7 +222,7 @@ ul.tabs li.current {
   padding: 15px;
 }
 
-.tab-content.current {
+.tab-content.current1 {
   display: inherit;
 }
 

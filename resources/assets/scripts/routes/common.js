@@ -5,6 +5,11 @@ export default {
     // JavaScript to be fired on all pages
   },
   finalize() {
+
+    $('.navbar-icon').click(function(){
+      $(this).toggleClass('active');
+      $('.navbar-menu nav').toggleClass('active');
+    });
     // JavaScript to be fired on all pages, after page specific JS is fired
 
   },

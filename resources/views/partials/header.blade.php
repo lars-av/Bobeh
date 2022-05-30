@@ -1,11 +1,15 @@
 <header class="banner">
   <div class="container">
-    <a class="brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a>
-    <nav class="nav-primary">
+    {{-- <a class="brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a>
+    <nav class="nav-primary"> --}}
+      <a href="">LOGO MAN</a>
       @if (has_nav_menu('primary_navigation'))
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
       @endif
-    </nav>
+    </nav> 
+    <div class="navbar-icon">
+      <span>Im button</span>
+    </div>
   </div>
 
   {{-- @php $house_list = Departments::House(-1) @endphp
