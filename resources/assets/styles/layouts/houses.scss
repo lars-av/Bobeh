@@ -19,6 +19,10 @@
     flex-direction: column;
     border-radius: $border-radius-small;
     position: relative;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
 
     img {
       height: 70vh;
@@ -33,8 +37,6 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
       border-radius: 0 0 1rem 1rem;
       padding: 1rem;
       margin: 0;
@@ -57,15 +59,36 @@
       opacity: 0;
       z-index: 100;
       transition: all 150ms ease;
-      background: linear-gradient(to top, $brand-primary, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+      background: linear-gradient(to top, rgb(43, 141, 126), rgba(22, 3, 63, 0.05));
       display: flex;
-      justify-content: center;
-      align-items: flex-end;
+      flex-direction: column;
+      justify-content: flex-end;
 
       p {
         margin: 2rem;
         color: white;
         z-index: 101;
+      }
+
+      h2 {
+        color: white;
+        margin: 0 2rem;
+      }
+
+      h4 {
+        color: white;
+        margin: 0.25rem 2rem;
+      }
+
+      .btn-card {
+        margin: 1rem 2rem;
+        font-size: 1.2rem;
+        border-radius: 40px;
+        min-width: 50%;
+        color: white;
+        border: 1px solid white;
+        padding: 1.5rem;
+        align-self: flex-start;
       }
     }
 
