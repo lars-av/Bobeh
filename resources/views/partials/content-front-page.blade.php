@@ -12,6 +12,7 @@
 </div>
 </section>
 
+
 <section class="wrapper-frontpage">
 <div class="flex-container-entry">
 <div class="focused-entry-points">
@@ -33,7 +34,7 @@
 
 <section class="news wrapper-frontpage">
     <h2>News</h2>
-    <div class="banner">
+    <div class="banner-news">
         <p>We have new job listings posted</p>     
         <a href="">Read more</a>
     </div>
@@ -78,49 +79,23 @@
 
     <div class="tabs-container">
 
+        @php
+            $h = 1 @endphp
+           @php $p = 1 @endphp
+           @php $targetgroups = get_field('target_group_list')
+         @endphp
         <ul class="tabs">
-            @php $i = 1 @endphp
-            @php $x = 1 @endphp
-            @php $targetgroup = get_field('target_group_list') @endphp
-    
-            @foreach ($targetgroup as $tg)
-            <li class="tab-link current" data-tab="tab-{{i}}">{{ $tg['target_group_list_title'] }}</li>
-            <button class="tab active{{$i}} tab-button" data-toggle-target=".tab-content-{{$i}}"> {{ $tg['target_group_list_title'] }}</button>
-            @php $i++ @endphp
+            @foreach ($targetgroups as $tgs)
+            <li class="tab-link" data-tab="tab-{{$h}}">{{ $tgs['target_group_list_title'] }}</li>
+            @php $h++ @endphp
             @endforeach
-
-            <li class="tab-link" data-tab="tab-3">Tab Three</li>
-            <li class="tab-link" data-tab="tab-4">Tab Four</li>
         </ul>
-    
-        <div id="tab-1" class="tab-content current">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        @foreach ($targetgroups as $bgs)
+        <div id="tab-{{$p}}" class="tab-content current{{$p}}">
+            {!!$bgs['list_of_items'] !!}
         </div>
-        <div id="tab-2" class="tab-content">
-             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
-        <div id="tab-3" class="tab-content">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        </div>
-        <div id="tab-4" class="tab-content">
-            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </div>
-
-    <!-- Tabs -->
-    <div class="target-group-tabs">
-    <div class="button-container">
-    @foreach ($targetgroup as $tg)
-    <button class="tab active{{$i}} tab-button" data-toggle-target=".tab-content-{{$i}}"> {{ $tg['target_group_list_title'] }}</button>
-    @php $i++ @endphp
-    @endforeach
-        </div>
-    <!-- Content -->
-    @foreach ($targetgroup as $bg)
-    <div class='tab-content tab-content-{{$x}} tab-information active{{$x}}'>
-        {!!$bg['list_of_items'] !!}
-    </div>
-    @php $x++ @endphp
-    @endforeach
+        @php $p++ @endphp
+        @endforeach
 </div>
 </div>
 </section>

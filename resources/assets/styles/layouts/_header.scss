@@ -1,4 +1,4 @@
-header {
+/* header {
   background-color: rgb(255, 255, 255);
   color: black;
   box-shadow: 0 0 12px 1px black;
@@ -29,3 +29,42 @@ header {
   }
 }
 
+ */
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+.banner {
+  background-color: green;
+
+  .container {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+#menu-primary-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  @include bp(tablet) {
+    flex-direction: column;
+  }
+
+  li {
+    list-style: none;
+  }
+}
+
+.navbar-icon {
+  display: none;
+
+  @include bp(tablet) {
+    display: block;
+  }
+}

@@ -6,11 +6,11 @@ export default {
       $('ul.tabs li').click(function(){
         var tab_id = $(this).attr('data-tab');
     
-        $('ul.tabs li').removeClass('current');
-        $('.tab-content').removeClass('current');
+        $('ul.tabs li').removeClass('current1');
+        $('.tab-content').removeClass('current1');
     
-        $(this).addClass('current');
-        $('#'+tab_id).addClass('current');
+        $(this).addClass('current1');
+        $('#'+tab_id).addClass('current1');
       })
     
     })
