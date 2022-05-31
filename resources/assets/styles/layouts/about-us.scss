@@ -1,0 +1,65 @@
+
+
+.values-layout {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2;
+  grid-template-rows: auto;
+  object-fit: cover;
+  background-image: url("/wp-content/themes/Bobeh/resources/assets/images/rose.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 40%;
+
+  .value {
+    max-width: 75%;
+    margin: 4rem 0;
+  }
+
+  .values-left {
+    grid-column-start: 1;
+  }
+
+  .values-right {
+    grid-column-start: 3;
+  }
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+
+  .window {
+    width: 1200%;
+    display: flex;
+
+    .goal-specific {
+      width: 50vw;
+      display: flex;
+    }
+
+    .goal {
+      display: flex;
+      flex-direction: column;
+      max-width: 50%;
+    }
+
+    .testimony {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+
+      h4 {
+        max-width: 25ch;
+        align-self: center;
+      }
+
+      p {
+        align-self: flex-end;
+      }
+    }
+  }
+}

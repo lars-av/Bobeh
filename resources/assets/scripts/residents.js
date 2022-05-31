@@ -30,7 +30,6 @@ for (let i = 0 ; i< sections.length ; i++) {
     if ( sectionPos.y < window.innerHeight/2 && sectionPos.y > -10 ) {
       const links = document.querySelectorAll('.anchor')
       for(let i = 0 ; i< links.length; i++){
-        console.log(links[i].parentElement.getAttribute('href'), section.id)
         if(links[i].parentElement.getAttribute('href') === ('#' + section.id) ) {
           links[i].classList.add('active')
         } else {
