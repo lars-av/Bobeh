@@ -1,28 +1,62 @@
 <section id="core-goals">
 <h2>Core Goals</h2>
+        <!-- Slider main container -->
+        <div class="swiper aboutSlide" stlye="margin-top: 2rem">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" data-swiper-autoplay="2000">
+              <div class="goal">
+                <div class="goal-info">
+                  <h2>Nice Goal</h2>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum libero reprehenderit dignissimos obcaecati beatae nemo asperiores. Cupiditate suscipit vero nulla!
+                  </p>
+                </div>
+                <div class="goal-testimony">
+                  <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nulla.</h4>
+                  <p>resident Testimony</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-swiper-autoplay="2000">
+              <div class="goal">
+                <div class="goal-info">
+                  <h2>Nice Goal</h2>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum libero reprehenderit dignissimos obcaecati beatae nemo asperiores. Cupiditate suscipit vero nulla!
+                  </p>
+                </div>
+                <div class="goal-testimony">
+                  <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nulla.</h4>
+                  <p>resident Testimony</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-swiper-autoplay="2000">
+              <div class="goal">
+                <div class="goal-info">
+                  <h2>Nice Goal</h2>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum libero reprehenderit dignissimos obcaecati beatae nemo asperiores. Cupiditate suscipit vero nulla!
+                  </p>
+                </div>
+                <div class="goal-testimony">
+                  <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nulla.</h4>
+                  <p>resident Testimony</p>
+                </div>
+              </div>
+            </div>
+            ...
+          </div>
 
-<ul class="slider">
-  <div class="window">
-  <li class="goal-specific">
-    <div class="goal">
-      <h3 class="goal-title">Safe home</h3>
-      <p class="goal-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero rerum natus aperiam saepe blanditiis itaque repellendus vel illum deserunt molestiae!</p>
-    </div>
-    <div class="testimony">
-      <h4 class="testimony-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, quos!</h4>
-      <p class="resident-author">Residnet testimony</p>
-    </div>
-  </li>
-</div>
-</ul>
-<button data-button >change</button>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+        </div>
+
 </section>
 
 <script>
-  let title = document.querySelector('.goal-title')
-  const goals = document.querySelectorAll('.goal-specific');
 
-  const button = document.querySelector('[data-button]')
 
 
 

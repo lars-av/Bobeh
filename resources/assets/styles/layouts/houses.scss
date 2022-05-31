@@ -25,7 +25,7 @@
     -moz-transform: translate3d(0, 0, 0);
 
     img {
-      height: 70vh;
+      height: 60vh;
       width: 100%;
       border-radius: 1rem 1rem  0 0;
       object-fit: cover;
@@ -44,7 +44,7 @@
 
       p,
       h3 {
-        margin: 0.25rem 0;
+        padding: 0 0 0.5rem 0;
         color: white;
       }
     }
