@@ -1,4 +1,4 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Autoplay, Navigation, Pagination } from 'swiper';
 
 export default {
   init() {
@@ -31,3 +31,25 @@ new Swiper('.slideShow', {
     clickable: 'true',
   },
 });
+
+// Slideshow
+new Swiper('.aboutSlide', {
+  modules: [Navigation, Pagination,Autoplay],
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: 'true',
+  },
+  autoplay: {
+    delay: 2000,
+    pauseOnMouseEnter: true,
+    autoplayResume: true,
+  },
+});
+

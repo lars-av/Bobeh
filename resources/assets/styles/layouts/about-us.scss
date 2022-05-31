@@ -26,40 +26,40 @@
   }
 }
 
-.slider {
+.goal {
   display: flex;
-  width: 100%;
-  overflow: hidden;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 
-  .window {
-    width: 1200%;
+  .goal-info {
+    padding: 0 2rem;
+    max-width: 50%;
+
+    h2 {
+      margin: 0;
+      color: $brand-primary;
+    }
+  }
+
+  .goal-testimony {
+    padding: 0 2rem;
     display: flex;
+    flex-direction: column;
 
-    .goal-specific {
-      width: 50vw;
-      display: flex;
+    h4 {
+      max-width: 35ch;
+      font-size: 1.1rem;
+      color: $brand-primary;
+      align-self: center;
     }
 
-    .goal {
-      display: flex;
-      flex-direction: column;
-      max-width: 50%;
-    }
-
-    .testimony {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 50%;
-
-      h4 {
-        max-width: 25ch;
-        align-self: center;
-      }
-
-      p {
-        align-self: flex-end;
-      }
+    p {
+      position: absolute;
+      font-size: 1.2rem;
+      align-self: flex-end;
+      bottom: 0;
     }
   }
 }
