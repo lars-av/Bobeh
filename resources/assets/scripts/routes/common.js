@@ -50,7 +50,7 @@ new Swiper('.aboutSlide', {
     clickable: 'true',
   },
   autoplay: {
-    delay: 2000,
+    delay: 5000,
     pauseOnMouseEnter: true,
     autoplayResume: true,
   },

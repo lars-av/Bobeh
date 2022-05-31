@@ -24,6 +24,7 @@
       @include('partials/about-us.hero-text')
       @include('partials/about-us.core-values')
       @include('partials/about-us.core-goals')
+      @include('partials/about-us.staff')
     </div>
   </div>
 @endsection

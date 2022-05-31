@@ -5,7 +5,7 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide" data-swiper-autoplay="2000">
+            <div class="swiper-slide" data-swiper-autoplay="4000">
               <div class="goal">
                 <div class="goal-info">
                   <h2>Nice Goal</h2>
@@ -18,7 +18,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide" data-swiper-autoplay="2000">
+            <div class="swiper-slide" data-swiper-autoplay="4000">
               <div class="goal">
                 <div class="goal-info">
                   <h2>Nice Goal</h2>
@@ -31,7 +31,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide" data-swiper-autoplay="2000">
+            <div class="swiper-slide" data-swiper-autoplay="4000">
               <div class="goal">
                 <div class="goal-info">
                   <h2>Nice Goal</h2>
@@ -44,7 +44,6 @@
                 </div>
               </div>
             </div>
-            ...
           </div>
 
           <!-- If we need navigation buttons -->
