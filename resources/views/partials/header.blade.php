@@ -42,7 +42,9 @@
 <script>
 
 let nav = document.getElementById('navigation');
+let navStyle = document.querySelector('.page-header');
 function toggleMenu() {
 nav.classList.toggle('navigation--visible');
+navStyle.classList.toggle('background-navigation-white')
 }
 </script>

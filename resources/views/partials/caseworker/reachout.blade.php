@@ -1,4 +1,4 @@
-<section>
+<section id="reach-out">
   <div class="wrapper">
   <h2>Reach out to us</h2>
 

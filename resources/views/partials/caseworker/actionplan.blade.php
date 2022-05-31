@@ -1,4 +1,4 @@
-<section>
+<section id="action-plan">
 <div class="image-half-width">
 <h2>Action Plan</h2>
 <div class="ourprocess-wrap">
