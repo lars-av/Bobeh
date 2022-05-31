@@ -5,7 +5,6 @@
         {!! get_field('frontpage_paragraph') !!}
         <a class="btnRounded" href="">See available spots</a>
     </div>
-
     <div class="flex-container-frontpage image-frontpage">
         <img src="http://bobehandling.test/wp-content/uploads/2022/05/Purkaervej-scaled.jpg" alt="">
     </div>
@@ -21,7 +20,9 @@
         <a href="{{ $cards['entrypoint_link'] }}" class="card">
             <img src="{{ $cards['entrypoint_image']['sizes']['large'] }}"
                 @if ($cards['entrypoint_image']['alt']) alt="{{ $cards['entrypoint_image']['alt'] }}" @endif>
-            <p>{{ $cards['entrypoint_text'] }}</p>
+           <div class="text-container-entrypoint">
+                <p>{{ $cards['entrypoint_text'] }}</p>
+         </div>
         </a>
     @endforeach
 </div>
@@ -76,9 +77,7 @@
 
 
 <!--Tabs v2-->
-
     <div class="tabs-container">
-
         @php
             $h = 1 @endphp
            @php $p = 1 @endphp
@@ -113,23 +112,23 @@
                 <h3>Honesty</h3>
                 <p>The foundation for and respecting each other</p>
             </div>
-            <div class="core-value-child">
+            <div class="core-value-child flex-center">
                 <h3>Care</h3>
                 <p>The individual situation and well bring uhh</p>
             </div>
-            <div class="core-value-child">
+            <div class="core-value-child flex-center">
                 <h3>Care</h3>
                 <p>The individual situation and well bring uhh</p>
             </div>
-            <div class="core-value-child">
+            <div class="core-value-child flex-center">
                 <h3>Care</h3>
                 <p>The individual situation and well bring uhh</p>
             </div>
-            <div class="core-value-child">
+            <div class="core-value-child flex-center">
                 <h3>Care</h3>
                 <p>The individual situation and well bring uhh</p>
             </div>
-            <div class="core-value-child">
+            <div class="core-value-child flex-center">
                 <h3>Care</h3>
                 <p>The individual situation and well bring uhh</p>
             </div>
@@ -142,7 +141,7 @@
             <div class="slideshow-container">
                 <div class="swiper slideShow">
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide" data-fancybox="gallery">
+                    <div class="swiper-slide"">
                         <div class="slider-house">
                             <div class="slider-text-container">
 
@@ -159,7 +158,7 @@
                         
                         </div>
                         </div>
-                        <div class="swiper-slide" data-fancybox="gallery">
+                        <div class="swiper-slide">
                             <div class="slider-house">
                                 <div class="slider-text-container">
                                  <div class="slider-container">

@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use Sober\Controller\Controller;
 
-class Departments extends Controller
+class Houses extends Controller
 {
     public static function house($num)
     {

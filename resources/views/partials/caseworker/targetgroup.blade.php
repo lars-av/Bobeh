@@ -1,4 +1,4 @@
-<section class="image-full-width">
+<section class="image-full-width" id="our-target-group">
 <h2>Target Group</h2>
 <img src="http://bobehandling.test/wp-content/uploads/2022/05/Purkaervej-scaled.jpg" alt="people-smiling">
 

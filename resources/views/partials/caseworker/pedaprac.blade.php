@@ -1,4 +1,4 @@
-<section>
+<section id="pedagogical-practice">
 <div class="image-half-width">
 <h2>Pedagogical Practice</h2>
 <div class="ourprocess-wrap">
