@@ -1,9 +1,9 @@
 <section>
-  <h1>Contact us</h1>
+  <h1 id="contact-us">Contact us</h1>
   <p>
     If you want to know mere about the foundation and our housing offers, then feel free to contact us.
     <br><br>
-    If you need to send CPR sensitive documentation, please do this by using either our mail: sikkermail@bobeh-blokhus.dk or by sending directly through our CVR. number: 32409946
+    If you need to send CPR sensitive documentation, please do this by using either our mail: <b>sikkermail@bobeh-blokhus.dk</b> or by sending directly through our CVR. number: <b>32409946</b>
   </p>
   <div class="contact-staff">
     <div class="person">
@@ -28,7 +28,7 @@
     </div>
   </div>
 
-  <div class="contact-house">
+  <div class="contact-house" id="find-us">
     <iframe src="https://www.google.com/maps/d/embed?mid=1iGfEje0aDKK0GjqBlcIesm1dl_wbYwA&hl=da&ehbc=2E312F" width="640" height="480"></iframe>
     <div class="all-houses">
       <div class="house">
