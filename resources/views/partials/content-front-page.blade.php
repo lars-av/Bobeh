@@ -184,7 +184,9 @@
 
     <div class="competencies-container flex-center">
         <h2>Competencies and Staff</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quidem dolorem illo ullam, magni libero saepe odit! Cum sint, rem, veniam nihil deserunt doloribus praesentium error enim minus, quas deleniti.</p>
+        <p>At Bo- og Behandlingscenter Blokhus we strive to provide the best help and support for our residents on a day-to-day basis. So that each resident feels a self-improvement and their quality of life increases. 
+<br><br>
+            Our personnel group is composed interdisciplinary of pedagogues, occupational therapists, teachers and health professionals. All working from a common interdisciplinary starting point.</p>
     </div>
     <img src="http://bobehandling.test/wp-content/uploads/2022/05/Purkaervej-scaled.jpg" alt="">
  
