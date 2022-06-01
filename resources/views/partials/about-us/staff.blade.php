@@ -29,7 +29,7 @@
     </p>
   </div>
   <div class="image">
-    <img src="/wp-content/themes/Bobeh/resources/assets/images/flower122.svg" alt="people-smiling">
+    <img src="/wp-content/themes/Bobeh/resources/assets/images/flowerhead.svg" alt="people-smiling">
 
       <div class="citation">
         <h4>"It means a lot to us to create a safe and cozy home with our residents with lots of care, closeness and human warmth."</h4>
@@ -38,5 +38,27 @@
 
   </div>
 </div>
+</div>
+
+<div class="occupation">
+  <h2 style="margin: 1rem 0; padding: 1rem;">Occupations at our houses</h2>
+  <div class="occupation-banner">
+    <div>
+      <i class="fa-solid fa-user icon"></i>
+      <h4>Teacher</h4>
+    </div>
+    <div>
+      <i class="fa-solid fa-user icon"></i>
+      <h4>Teacher</h4>
+    </div>
+    <div>
+      <i class="fa-solid fa-user icon"></i>
+      <h4>Teacher</h4>
+    </div>
+    <div>
+      <i class="fa-solid fa-user icon"></i>
+      <h4>Teacher</h4>
+    </div>
+  </div>
 </div>
 </section>
