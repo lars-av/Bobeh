@@ -27,7 +27,7 @@ for (let i = 0 ; i< sections.length ; i++) {
 
     sections.forEach(section => {
     const sectionPos =  section.getBoundingClientRect()
-    if ( sectionPos.y < window.innerHeight/2 && sectionPos.y > -10 ) {
+    if ( sectionPos.y < window.innerHeight/3 && sectionPos.y > -10 ) {
       const links = document.querySelectorAll('.anchor')
       for(let i = 0 ; i< links.length; i++){
         if(links[i].parentElement.getAttribute('href') === ('#' + section.id) ) {
