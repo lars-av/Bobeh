@@ -2,6 +2,40 @@
 
 @section('content')
 
+@php $flexibleContent = get_field('this_is_the_first_label', get_the_ID()) @endphp
+@dump($flexibleContent)
+
+@php
+    $theID = get_the_ID()
+@endphp
+@dump(get_post_type($theID))
+
+@foreach ($flexibleContent as $fc)
+@if ($fc['acf_fc_layout'] == 'insideflexcontent1')
+<h1>COOL</h1>
+<p>{{ $fc['firstactualacfinsidecontainer'] }}</p>
+@endif
+@if ($fc['acf_fc_layout'] == 'insideflexcontent2')
+<section>
+<h1>IMAGES?</h1>
+<p>{{ $fc['firstactualacfinsidecontainer1'] }}</p>
+</section>
+@endif
+@endforeach
+
+@php $news_list = New_event::News(1) @endphp
+    @foreach ($news_list as $news)
+    {{ $news['title'] }}
+    {{ $news['flex'] }}
+    @endforeach
+
+@dump(get_field('this_is_the_first_label', 157))
+    
+@php
+  $post_fields = get_fields(29);
+@endphp
+@dump($post_fields)
+
 <div class="wrapper-large">
   @if ("true" == "true")
   <div class="wrap-side-nav">
