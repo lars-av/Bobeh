@@ -4,7 +4,7 @@
 
 <div class="image-text">
   <div class="text-field">
-    <p>At our social psychiatric residence in North Jutland, we place great emphasis on being able to offer residents in this house a homely and safe environment, with predictable structures and clear staff. We receive a number of different residents, and it is precisely one of our core values ​​that there is room for everyone in our house.Bo- og Behandlingscenter Blokhus is like a big family, where everyone takes part in the responsibility. You have to cook, wash clothes, clean and other things for everyday life to work.
+    <p>At our social psychiatric residence in North Jutland, we place great emphasis on being able to offer residents in this house a homely and safe environment, with predictable structures and clear staff. We receive a number of different residents, and it is precisely one of our core values ​​that there is room for everyone in our house. Bo- og Behandlingscenter Blokhus is like a big family, where everyone takes part in the responsibility. You have to cook, wash clothes, clean and other things for everyday life to work.
     </p>
   </div>
 </div>
@@ -14,24 +14,24 @@
     <div class="infographics-grid">
       <div class="infographic-column">
         <ul>
-          <li>Supportive Conversations</li>
-          <li>Preserve or re-establish contact with family and friends</li>
-          <li>And here</li>
+          <li>Schizophrenia</li>
+          <li>Personality disorder</li>
+          <li>Depression</li>
         </ul>
       </div>
       <div class="infographic-column">
         <ul>
-          <li>Stop inappropriate drug use</li>
-          <li>Adhere to agreements e.g. with dentist / doctor / bank / municipalicies etc.</li>
-          <li>And here</li>
+          <li>Bipolar</li>
+          <li>OCD</li>
+          <li>Anxiety</li>
         </ul>
       </div>
       <div class="infographic-column">
         <ul>
-          <li>Cleaning / tidying up the room / bathroom
+          <li>Double diagnosis
           </li>
-          <li>Something also</li>
-          <li>And here</li>
+          <li>Developmental disorder</li>
+          <li>Mental disabilities</li>
         </ul>
       </div>
     </div>
