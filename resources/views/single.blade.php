@@ -25,13 +25,10 @@
 @endif
 
 <div class="wrap-side-content">
-@dump($flexibleContent)
-{{-- 
-  id="{{str_replace(' ', '', $fc['section_name'])}}" --}}
 
+{{-- id="{{str_replace(' ', '', $fc['section_name'])}}" --}}
 @foreach ($flexibleContent as $fc)
 @if ($fc['acf_fc_layout'] == 'introduction_section')
-  @dump($fc['house_features'])
   @include('partials/specific-house-post/house-intro')
 @endif
 @if ($fc['acf_fc_layout'] == 'section:_text_image_text')
@@ -46,10 +43,13 @@
 @if ($fc['acf_fc_layout'] == 'section:_4_images_with_text_between')
   @include('partials/specific-house-post/living-conditions')
 @endif
-</div>
-</div>
+
 
 @endforeach
+
+</div>
+
+</div>
 
 @endif
 

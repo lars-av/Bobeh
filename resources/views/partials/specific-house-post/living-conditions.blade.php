@@ -1,18 +1,17 @@
-<section class="living-conditions">
-  <h2>Living Conditions</h2>
-  <h3>Room</h3>
-  <img src="http://bobehandling.test/wp-content/uploads/2022/05/Purkaervej-scaled.jpg" class="living-conditions-img"alt="people-smiling">
+<section class="living-conditions" id="{{str_replace(' ', '', $fc['section_name'])}}">
+  <h2>{{$fc['section_name']}}</h2>
+  <img src="{{$fc['image_1']['sizes']['large']}}" class="abouthouse-img" alt="{{$fc['image_1']['alt']}}">
   <div class="paragraph-1">
-    <p>When you live at Bo og Behandlingscenter Blokhus, you get help and support to become better at mastering your life. This is for example in relation to:</p>
+    {!! $fc['text_1'] !!}
   </div>
 
   <div class="living-condition-section-2">
-    <img src="http://bobehandling.test/wp-content/uploads/2022/05/Purkaervej-scaled.jpg" class="living-conditions-img-2"alt="people-smiling">
-    <img src="http://bobehandling.test/wp-content/uploads/2022/05/Purkaervej-scaled.jpg" class="living-conditions-img-2"alt="people-smiling">
+    <img src="{{$fc['image_2']['sizes']['large']}}" class="living-conditions-img-2"alt="{{$fc['image_2']['alt']}}">
+    <img src="{{$fc['image_3']['sizes']['large']}}" class="living-conditions-img-2"alt="{{$fc['image_3']['alt']}}">
   </div>
   <div class="paragraph-2">
-    <p>When you live at Bo og Behandlingscenter Blokhus, you get help and support to become better at mastering your life. This is for example in relation to:</p>
-  </div>
+    {!! $fc['text_2'] !!}
+    </div>
 
 
 </section>

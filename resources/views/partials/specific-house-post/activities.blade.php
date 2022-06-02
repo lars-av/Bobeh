@@ -4,14 +4,14 @@
     <div class="activity-text">
       {!! $fc['first_text'] !!}
     </div>
-    <img src="http://bobehandling.test/wp-content/uploads/2022/05/Purkaervej-scaled.jpg" class="house-activities-img"alt="people-smiling">
+    <img src="{{$fc['first_image']['sizes']['large']}}" class="house-activities-img"alt="{{$fc['first_image']['alt']}}">
   </div>
 
   <div class="activity-two">
     <div class="activity-text">
       {!! $fc['second_text'] !!}
     </div>
-    <img src="http://bobehandling.test/wp-content/uploads/2022/05/Purkaervej-scaled.jpg" class="house-activities-img"alt="people-smiling">
+    <img src="{{$fc['second_image']['sizes']['large']}}" class="house-activities-img"alt="{{$fc['second_image']['alt']}}">
   </div>
 
 </section>
