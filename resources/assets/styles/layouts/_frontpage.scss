@@ -295,9 +295,43 @@
     position: absolute;
     opacity: 40%;
     left: -10rem;
+    overflow: none;
+
+    .target-flower-svg {
+      stroke: transparent;
+
+      path {
+        stroke-dasharray: 1;
+        animation: dash 1s linear;
+      }
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dasharray: 2000;
+        stroke: red;
+      }
+    }
 
     @include bp (desktop) {
       left: 25rem;
+    }
+
+    .flower-path {
+      svg {
+        width: 999;
+
+        path {
+          stroke-dasharray: 20;
+          fill: red;
+        }
+      }
+    }
+
+    #target-flower {
+      path {
+        stroke-dasharray: 20;
+      }
     }
 
     @include bp (smalldesktop) {
@@ -311,6 +345,10 @@
       opacity: 20%;
       transform: translate(-50%, 20%);
       stroke-width: 5;
+    }
+
+    @include bp (phone) {
+      top: -7rem;
     }
   }
 
@@ -412,6 +450,10 @@ ul.tabs li.current1 {
       opacity: 20%;
       transform: translate(-50%, 20%);
       stroke-width: 5;
+    }
+
+    @include bp (phone) {
+      top: -15rem;
     }
   }
 

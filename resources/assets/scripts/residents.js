@@ -41,6 +41,17 @@ for (let i = 0 ; i< sections.length ; i++) {
 
   })
 }
+let flowerTarget = document.querySelector('.flower-path')
+let targetGroup = document.querySelector('.target-flower-svg')
 
+flowerTarget.addEventListener('load', () => {
+  let svgDoc = flowerTarget.contentDocument
+  let actualSVG = svgDoc.getElementById('actual-flower')
+  let actualSVGClass = svgDoc.querySelector('target-flower-svg')
+  console.log(actualSVG)
+  console.log(actualSVGClass)
+  console.log(svgDoc)
+  targetGroup.appendChild(actualSVG)
+})
 
 
