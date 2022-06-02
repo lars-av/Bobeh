@@ -2,9 +2,13 @@
 
 .blue-section {
   background-color: $section-blue;
-  min-height: 100vh;
+  padding: 10rem 0;
   display: flex;
   align-items: center;
+
+  @include bp (tabletportsmall) {
+    padding: 8rem 0;
+  }
 }
 
 .flex-center {
@@ -23,10 +27,14 @@
 }
 
 .wrapper-frontpage {
-  max-width: 1240px;
+  max-width: 1380px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
+
+  .blue-section {
+    padding: 0 2rem;
+  }
 
   @include bp(tabletport) {
     padding: 0 clamp(0.3rem, 2%, 1rem);
@@ -103,8 +111,7 @@
 }
 
 .flex-container-entry {
-  margin: 3rem 0;
-  height: 700px;
+  padding: 6rem 0;
   display: flex;
   align-items: center;
   gap: $spacer-small;
@@ -117,6 +124,7 @@
 
 .focused-entry-points {
   display: grid;
+  width: 100%;
   grid-template-columns: 300px 300px;
   gap: $spacer;
 
@@ -190,6 +198,10 @@
 
 //News section
 
+.news {
+  padding: 6rem 0;
+}
+
 .banner-news {
   display: flex;
   justify-content: space-between;
@@ -218,11 +230,13 @@
 }
 
 .news-card {
+  height: 100%;
   box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
   border-radius: $border-radius-small;
+  display: flex;
+  flex-direction: column;
 
   img {
-    height: 30vh;
     border-radius: $border-radius-small $border-radius-small 0 0;
 
     @include bp(tabletportsmall) {
@@ -234,18 +248,65 @@
 .news-card-text {
   padding: 1rem;
   min-height: 100px;
+  height: 150px;
+  max-height: 250px;
   border-radius: 0 0 $border-radius-small $border-radius-small;
 }
 
 //Target group
+.target-group-description {
+  max-width: 40%;
+
+  @include bp (tablet) {
+    max-width: 100%;
+    padding: 2rem;
+  }
+
+  @include bp (phone) {
+    justify-content: center;
+    text-align: center;
+  }
+}
 
 .target-group {
-  display: grid;
+  display: flex;
+  align-items: center;
   gap: clamp(2rem, 5vw, 5rem);
-  grid-template-columns: 1fr 700px;
+  justify-content: space-between;
+  position: relative;
 
   @include bp(tablet) {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  @include bp (tabletportsmall) {
+    justify-content: center;
+  }
+
+  .target-flower {
+    position: absolute;
+    left: -10rem;
+
+    @include bp (smalldesktop) {
+      height: 150px;
+      object-fit: cover;
+      top: 1rem;
+      left: 20rem;
+    }
+
+    @include bp (tablet) {
+      top: -10rem;
+      left: 50%;
+      transform: translate(-50%, 20%);
+      stroke-width: 5;
+      height: 170px;
+    }
+  }
+
+  p {
+    @include bp(tabletportsmall) {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -258,9 +319,14 @@
 //new tabs
 
 .tabs-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+
   li {
     list-style: none;
     margin: 1rem 0;
+    max-width: 90%;
   }
 }
 
@@ -291,15 +357,51 @@ ul.tabs li.current1 {
   display: grid;
   gap: clamp(2rem, 5vw, 5rem);
   grid-template-columns: 1fr 700px;
+  position: relative;
+
+  .values-flower {
+    position: absolute;
+    left: -10rem;
+    top: -5rem;
+
+    @include bp (smalldesktop) {
+      height: 150px;
+      object-fit: cover;
+      top: -2rem;
+      left: 12rem;
+    }
+
+    @include bp (tablet) {
+      top: -10rem;
+      left: 50%;
+      transform: translate(-50%, 20%);
+      height: 170px;
+    }
+  }
 
   @include bp(tablet) {
     grid-template-columns: 1fr;
+    margin: 3rem 0;
   }
 }
 
-.core-values-desciption {
+.core-values-description {
   display: flex;
   flex-direction: column;
+
+  @include bp (tablet) {
+    max-width: 100%;
+    padding: 2rem;
+  }
+
+  @include bp (phone) {
+    justify-content: center;
+    text-align: center;
+
+    a {
+      align-self: unset;
+    }
+  }
 }
 
 .core-value-grid {
@@ -309,25 +411,43 @@ ul.tabs li.current1 {
   grid-template-columns: 1fr 1fr 1fr;
 
   @include bp(tabletport) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 0.5rem;
+  }
+
+  @include bp(tabletportsmall) {
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr;
   }
   // grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
 }
 
 .core-value-child {
   padding: $spacer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   align-items: center;
   border-radius: $border-radius-small;
   gap: 0;
 
-  @include bp(tabletport) {
+  @include bp(tabletportsmall) {
     padding: 0.5rem;
+    height: 200px;
+  }
+
+  h3 {
+    padding: 0;
   }
 
   p {
     margin-top: 0.5rem;
+
+    @include bp (phone) {
+      height: auto;
+      font-size: 0.85rem;
+    }
   }
 
   a {
@@ -336,6 +456,7 @@ ul.tabs li.current1 {
 
   &:nth-child(even) {
     background-color: $brand-primary;
+    outline: 2px solid $brand-primary;
 
     h3,
     p {
@@ -356,9 +477,14 @@ ul.tabs li.current1 {
 //Competencies and staff
 
 .competencies {
-  grid-template-rows: 700px;
+  display: flex;
+  margin: 6rem 0;
+
+  img {
+    max-width: 50%;
+  }
 
   @include bp(tablet) {
-    grid-template-rows: auto;
+    margin: 3rem 0;
   }
 }

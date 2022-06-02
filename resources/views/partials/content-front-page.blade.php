@@ -33,15 +33,15 @@
        {!! get_field('about_fond_text') !!}
     </div>
 </div>
-</section>
 
-<section class="news wrapper-frontpage">
-    <h2>News</h2>
-    <div class="banner-news">
-        <p>We have new job listings posted</p>
-        <a href="">Read more</a>
-    </div>
 
+<section class="news">
+  <div class="banner-news">
+    <p>We have new job listings posted</p>
+    <a href="">Read more</a>
+  </div>
+
+  <h2>News</h2>
     <div class="news-card-container">
         <div class="news-card">
             <img src="http://bobehandling.test/wp-content/uploads/2022/05/Purkaervej-scaled.jpg" alt="">
@@ -67,10 +67,14 @@
         </div>
     </div>
 </section>
+</section>
 
 <section class="blue-section">
-
-    <div class="target-group wrapper-frontpage">
+  <div class="wrapper-frontpage">
+  <div class="target-group ">
+      <div class="target-flower">
+        <img src="/wp-content/themes/Bobeh/resources/assets/images/targetflower.svg" alt="">
+      </div>
     <!-- Target group text -->
     <div class="target-group-description flex-center">
     <h2>Our target group HC</h2>
@@ -101,10 +105,15 @@
         @endforeach
 </div>
 </div>
+</div>
 </section>
 
 <section class="blue-section">
-    <div class="wrapper-frontpage core-values">
+  <div class="wrapper-frontpage">
+    <div class=" core-values">
+      <div class="values-flower">
+        <img src="/wp-content/themes/Bobeh/resources/assets/images/flowervalues.svg" alt="">
+      </div>
         <div class="core-values-description flex-center">
         <h2>Core values</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad nihil cum alias architecto, ipsum earum delectus consectetur beatae harum vel similique! Facere aliquam cupiditate minima deleniti voluptas. Assumenda, delectus vel!</p>
@@ -138,8 +147,8 @@
             </div>
         </div>
     </div>
+  </div>
 </section>
-
         <section class="wrapper-frontpage">
             <h2>Our houses</h2>
             <div class="slideshow-container">
@@ -184,17 +193,10 @@
                   </div>
             </section>
 
-<section class="target-group competencies wrapper-frontpage">
-
-    <div class="competencies-container flex-center">
+            <div class="wrapper-frontpage">
+          <section class="target competencies">
+      <div class="competencies-container flex-center">
         <h2>Competencies and Staff</h2>
-        <p>At Bo- og Behandlingscenter Blokhus we strive to provide the best help and support for our residents on a day-to-day basis. So that each resident feels a self-improvement and their quality of life increases. 
-<br><br>
-            Our personnel group is composed interdisciplinary of pedagogues, occupational therapists, teachers and health professionals. All working from a common interdisciplinary starting point.</p>
-    </div>
-    <img src="http://bobehandling.test/wp-content/uploads/2022/05/Purkaervej-scaled.jpg" alt="">
-
-
 </section>
 
 {{-- <section class="flexContainerFp">
