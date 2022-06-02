@@ -7,18 +7,19 @@
 
 @if ($postType == 'house')
 
+@dump($flexibleContent)
+
 <div class="wrapper-large">
 
 @if ("true" == "true")
   <div class="wrap-side-nav">
     <div class="side-nav">
       <ul>
-         <a href="#about"><li class="anchor" >About</li></a>
-         <a href="#day-to-day"><li class="anchor" >Day to Day Life</li></a>
-         <a href="#process-of-applying"><li class="anchor" >Process of applying</li></a>
-         <a href="#self-determination"><li class="anchor" >Self Determiation</li></a>
-         <a href="#duty-of-care"><li class="anchor" >Duty of care</li></a>
-         <a href="#involvement-in-development"><li class="anchor" >Involvement In Development</li></a>
+        @foreach ($flexibleContent as $sh)
+        @if ($sh['section_name'])
+          <a href="#{{str_replace(' ', '', $sh['section_name'])}}"><li class="anchor" >{{$sh['section_name']}}</li></a>
+        @endif
+        @endforeach
       </ul>
     </div>
   </div>
@@ -48,7 +49,6 @@
 @endforeach
 
 </div>
-
 </div>
 
 @endif

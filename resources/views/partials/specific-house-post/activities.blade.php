@@ -13,5 +13,4 @@
     </div>
     <img src="{{$fc['second_image']['sizes']['large']}}" class="house-activities-img"alt="{{$fc['second_image']['alt']}}">
   </div>
-
 </section>
