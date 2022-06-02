@@ -76,7 +76,7 @@
         <img src="/wp-content/themes/Bobeh/resources/assets/images/targetflower.svg" alt="">
       </div>
     <!-- Target group text -->
-    <div class="target-group-description flex-center">
+    <div class="target-group-description ">
     <h2>Our target group HC</h2>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit eos repudiandae a accusantium ullam aperiam assumenda? Dignissimos laudantium quaerat dolor! Fugiat unde architecto quia tenetur sapiente molestiae delectus debitis modi.</p>
     </div>
