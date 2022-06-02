@@ -257,6 +257,7 @@
 //Target group
 .target-group-description {
   max-width: 40%;
+  z-index: 100;
 
   @include bp (tablet) {
     max-width: 80%;
@@ -293,28 +294,65 @@
 
   .target-flower {
     position: absolute;
-    opacity: 40%;
-    left: -10rem;
-    overflow: none;
+    display: flex;
+    opacity: 60%;
+    top: 0;
 
-    .target-flower-svg {
-      stroke: transparent;
+    svg {
+      position: absolute;
+      left: -10rem;
+      stroke: $brand-primary;
+      stroke-width: 1;
+      animation: stroke 2.5s ease-in-out forwards 2s;
+
+      @include bp (desktop) {
+        left: 25rem;
+      }
+
+      @include bp (smalldesktop) {
+        object-fit: cover;
+        left: 20rem;
+      }
+
+      @include bp (tablet) {
+        left: 50%;
+        top: -2rem;
+        opacity: 20%;
+        transform: translate(-50%, 20%);
+        stroke-width: 5;
+      }
+
+      @include bp (phone) {
+        top: -7rem;
+      }
 
       path {
-        stroke-dasharray: 1;
-        animation: dash 1s linear;
+        fill: $section-blue;
+        stroke-dasharray: 8723;
+        stroke-dashoffset: 8723;
+        animation: dash 3.25s ease-in-out forwards 2s, color 3.25s linear forwards 2s;
       }
     }
 
     @keyframes dash {
       to {
-        stroke-dasharray: 2000;
-        stroke: red;
+        opacity: 60%;
+        fill: $brand-primary;
+        stroke-dashoffset: 0;
       }
     }
 
-    @include bp (desktop) {
-      left: 25rem;
+    @keyframes color {
+      to {
+        opacity: 60%;
+        fill: $brand-primary;
+      }
+    }
+
+    @keyframes stroke {
+      to {
+        stroke-width: 0;
+      }
     }
 
     .flower-path {
@@ -332,23 +370,6 @@
       path {
         stroke-dasharray: 20;
       }
-    }
-
-    @include bp (smalldesktop) {
-      object-fit: cover;
-      left: 20rem;
-    }
-
-    @include bp (tablet) {
-      left: 50%;
-      top: -2rem;
-      opacity: 20%;
-      transform: translate(-50%, 20%);
-      stroke-width: 5;
-    }
-
-    @include bp (phone) {
-      top: -7rem;
     }
   }
 

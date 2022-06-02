@@ -42,16 +42,16 @@ for (let i = 0 ; i< sections.length ; i++) {
   })
 }
 let flowerTarget = document.querySelector('.flower-path')
-let targetGroup = document.querySelector('.target-flower-svg')
+let targetGroup = document.querySelector('.target-flower')
 
 flowerTarget.addEventListener('load', () => {
   let svgDoc = flowerTarget.contentDocument
   let actualSVG = svgDoc.getElementById('actual-flower')
-  let actualSVGClass = svgDoc.querySelector('target-flower-svg')
-  console.log(actualSVG)
+  let actualSVGClass = svgDoc.querySelector('.target-flower-svg')
+  console.log(actualSVG.getTotalLength())
   console.log(actualSVGClass)
   console.log(svgDoc)
-  targetGroup.appendChild(actualSVG)
+  targetGroup.appendChild(actualSVGClass)
 })
 
 
