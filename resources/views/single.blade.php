@@ -7,8 +7,6 @@
 
 @if ($postType == 'house')
 
-@dump($flexibleContent)
-
 <div class="wrapper-large">
 
 @if ("true" == "true")
@@ -47,7 +45,6 @@
 
 
 @endforeach
-
 </div>
 </div>
 
