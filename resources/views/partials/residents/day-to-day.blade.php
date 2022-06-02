@@ -4,7 +4,10 @@
 
   <div class="image-text">
     <div class="text-field">
-      <p>mauris. Integer mollis ipsum rhoncus justo efficitur, a faucibus odio efficitur. Nunc a nibh congue, tempus magna id, mollis diam. Praesent pretium turpis quis gravida sodales. Donec augue sem, suscipit sed odio in, ultricies tempus ipsum. Nulla varius, dolor quis semper elementum </p>
+      <p>Bo- og Behandlingscenter Blokhus is like a large family where everyone participates and share responsibilities. Everyday we cook, wash clothes, clean and other daily routines that needs to be completed.
+        <br><br>
+        We put a strong emphasis on providing a safe frame with a predictable structure and present personnel. As we have a lot of different residents, we want everyone to feel they belong.
+      </p>
     </div>
   </div>
   <div>

@@ -1,9 +1,11 @@
 <section class="no-margin">
     <div class="flex-frontpage">
-    <div class="flex-container-frontpage flex-center text-container-frontpage">
-        <h1>Bo-og Behandlingscenter Blokhus</h1>
+    <div class=" front-title flex-center text-container-frontpage">
+      <div>
+        <h1 style="">Bo-og Behandlingscenter Blokhus</h1>
         {!! get_field('frontpage_paragraph') !!}
-        <a class="btnRounded" href="">See available spots</a>
+        <a class="btnRounded" style="margin-top: 1rem;" href="">See available spots</a>
+      </div>
     </div>
 
     <div class="flex-container-frontpage image-frontpage">
@@ -20,7 +22,9 @@
         <a href="{{ $cards['entrypoint_link'] }}" class="card">
             <img src="{{ $cards['entrypoint_image']['sizes']['large'] }}"
                 @if ($cards['entrypoint_image']['alt']) alt="{{ $cards['entrypoint_image']['alt'] }}" @endif>
-            <p>{{ $cards['entrypoint_text'] }}</p>
+              <div class="entry-point-card-text">
+                <p>{{ $cards['entrypoint_text'] }}</p>
+              </div>
         </a>
     @endforeach
 </div>
@@ -29,15 +33,15 @@
        {!! get_field('about_fond_text') !!}
     </div>
 </div>
-</section>
 
-<section class="news wrapper-frontpage">
-    <h2>News</h2>
-    <div class="banner-news">
-        <p>We have new job listings posted</p>     
-        <a href="">Read more</a>
-    </div>
 
+<section class="news">
+  <div class="banner-news">
+    <p>We have new job listings posted</p>
+    <a href="">Read more</a>
+  </div>
+
+  <h2>News</h2>
     <div class="news-card-container">
         <div class="news-card">
             <img src="http://bobehandling.test/wp-content/uploads/2022/05/Purkaervej-scaled.jpg" alt="">
@@ -63,10 +67,14 @@
         </div>
     </div>
 </section>
+</section>
 
 <section class="blue-section">
-
-    <div class="target-group wrapper-frontpage">
+  <div class="wrapper-frontpage">
+  <div class="target-group ">
+      <div class="target-flower">
+        <img src="/wp-content/themes/Bobeh/resources/assets/images/targetflower.svg" alt="">
+      </div>
     <!-- Target group text -->
     <div class="target-group-description flex-center">
     <h2>Our target group HC</h2>
@@ -97,16 +105,21 @@
         @endforeach
 </div>
 </div>
+</div>
 </section>
 
 <section class="blue-section">
-    <div class="wrapper-frontpage core-values">
+  <div class="wrapper-frontpage">
+    <div class=" core-values">
+      <div class="values-flower">
+        <img src="/wp-content/themes/Bobeh/resources/assets/images/flowervalues.svg" alt="">
+      </div>
         <div class="core-values-description flex-center">
         <h2>Core values</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad nihil cum alias architecto, ipsum earum delectus consectetur beatae harum vel similique! Facere aliquam cupiditate minima deleniti voluptas. Assumenda, delectus vel!</p>
         <a class="btnRounded" href="">Mission, Vision and Values</a>
         </div>
-        
+
         <div class="core-value-grid">
             <div class="core-value-child flex-center">
                 <h3>Honesty</h3>
@@ -134,8 +147,8 @@
             </div>
         </div>
     </div>
+  </div>
 </section>
-
         <section class="wrapper-frontpage">
             <h2>Our houses</h2>
             <div class="slideshow-container">
@@ -155,7 +168,7 @@
                             <div class="slider-image-container">
                                 <img src="http://bobehandling.test/wp-content/uploads/2022/05/Purkaervej-scaled.jpg" alt="">
                             </div>
-                        
+
                         </div>
                         </div>
                         <div class="swiper-slide" data-fancybox="gallery">
@@ -170,25 +183,20 @@
                                 <div class="slider-image-container">
                                     <img src="http://bobehandling.test/wp-content/uploads/2022/05/Purkaervej-scaled.jpg" alt="">
                                 </div>
-                            
+
                             </div>
                             </div>
                   </div>
                 </div>
-            
+
                 <div class="swiper-pagination"></div>
                   </div>
             </section>
 
-<section class="target-group competencies wrapper-frontpage">
-
-    <div class="competencies-container flex-center">
+            <div class="wrapper-frontpage">
+          <section class="target competencies">
+      <div class="competencies-container flex-center">
         <h2>Competencies and Staff</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quidem dolorem illo ullam, magni libero saepe odit! Cum sint, rem, veniam nihil deserunt doloribus praesentium error enim minus, quas deleniti.</p>
-    </div>
-    <img src="http://bobehandling.test/wp-content/uploads/2022/05/Purkaervej-scaled.jpg" alt="">
- 
-
 </section>
 
 {{-- <section class="flexContainerFp">
@@ -223,7 +231,7 @@
 
 
 
-BIG Flexible content LORE DONT ERASE ME UNTIL U MAKE FLEXIBLE CONTENT 
+BIG Flexible content LORE DONT ERASE ME UNTIL U MAKE FLEXIBLE CONTENT
 
  @php $flexibleContent = get_field('flextest') @endphp
 @foreach ($flexibleContent as $fc)
@@ -295,7 +303,7 @@ BIG Flexible content LORE DONT ERASE ME UNTIL U MAKE FLEXIBLE CONTENT
                 <div class="slider-image-container">
                     <img src="http://bobehandling.test/wp-content/uploads/2022/05/Purkaervej-scaled.jpg" alt="">
                 </div>
-            
+
             </div>
             </div>
             <div class="swiper-slide" data-fancybox="gallery">
@@ -306,7 +314,7 @@ BIG Flexible content LORE DONT ERASE ME UNTIL U MAKE FLEXIBLE CONTENT
                     <div class="slider-image-container">
                         <img src="http://bobehandling.test/wp-content/uploads/2022/05/Purkaervej-scaled.jpg" alt="">
                     </div>
-                
+
                 </div>
                 </div>
       </div>

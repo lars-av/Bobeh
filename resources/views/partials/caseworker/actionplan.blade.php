@@ -6,10 +6,9 @@
 
   <div class="text-field-1col">
     <h3>Our Process</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam varius augue, ut vehicula enim eleifend a. Praesent non mattis risus, id luctus enim.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam varius augue, ut vehicula enim eleifend a. Praesent non mattis risus, id luctus enim.
+    <p>To ensure we can help the resident as best as possible, we go through several steps in order to see if they are a fit at our houses, how our setup can benefit them and what the resident wants to achieve with their stay. In order for the stay to be optimal for all parties involved, we always follow the same steps.
       <br><br>
-      Consists of these steps:
+      Our process consists of these steps:
     </p>
   </div>
 </div>
@@ -18,10 +17,10 @@
       <div class="infographic-column">
         <h4 class="h4-caseworker">
         <i class="fa-solid fa-circle"></i>
-          Citizens Assesment
+          Citizen Assesment
         </h4>
         <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam varius 
+        We match the citizens information with what we offer in order to see if we are suitable to care for the future resident. This also includes a plan, goals and how these will be achieved.
         </p>
       </div>
       <div class="infographic-column">
@@ -30,7 +29,7 @@
           Documentation
         </h4>
         <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam varius 
+        All the citizens previous documentets will be gathered. This gives us a strong base of what the citizen struggles with, what they need help to improve on and if we can accomodate their needs.
         </p>
       </div>
       <div class="infographic-column">
@@ -39,7 +38,7 @@
           Price Estimate
         </h4>
         <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam varius 
+        Each case is different and therefor based on the documentation and citizens needs, an price estimate will be made. Each price estimate is tailored for individual citizens based on their needs.
         </p>
       </div>
     </div>
@@ -59,15 +58,17 @@ We aim to announce matching <b>responses within 1-2 business days.</b>
 
 <div class="half-section-paragraph">
   <h3>Documentation</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam varius augue, ut vehicula enim eleifend a. Praesent non mattis risus, id luctus enim. Nullam cursus dolor eu tempor dignissim. Quisque imperdiet elementum urna quis auctor. Ut convallis a lacus et faucibus. Praesent condimentum finibus tellus, vitae viverra elit auctor sed. 
+  <p>All previous documentation on the citizen will be gathered. From various sources such as previous homes, caretakers, medical records, theraputic records and much more.
 <br><br>
-Etiam eget dignissim enim, ut volutpat l.
+This is done in order to support the citizen assesments and ensure we have a clear and precise picture of the citizen. Ensuring we can provide the support and help that is needed for them to achieve their goals and feel day-to-day improvements during their stay.
 </p>
 </div>
 
 <div class="half-section-paragraph">
   <h3>Price Estimate</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam varius augue, ut vehicula enim eleifend a. Praesent non. Etiam eget dignissim enim, ut volutpat l
+  <p>Prices are estimated. Due to each citizen being unique with different needs that have to be fulfilled, the prices are calculated and estimated for each citizen.
+    <br><br>
+    Click on the link below to our Tilbudsportalen page, in order to see price estimates per. resident. We always strive to provide the best possible prices for each resident.
 </p>
 <a href="https://tilbudsportalen.dk/" class="tilbudportal-link">
 <i class="fa-solid fa-arrow-up-right-from-square"></i>
