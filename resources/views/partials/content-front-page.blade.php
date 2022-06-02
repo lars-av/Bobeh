@@ -197,11 +197,6 @@
           <section class="target competencies">
       <div class="competencies-container flex-center">
         <h2>Competencies and Staff</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quidem dolorem illo ullam, magni libero saepe odit! Cum sint, rem, veniam nihil deserunt doloribus praesentium error enim minus, quas deleniti.</p>
-      </div>
-      <img src="http://bobehandling.test/wp-content/uploads/2022/05/Purkaervej-scaled.jpg" alt="">
-    </section>
-  </div>
 </section>
 
 {{-- <section class="flexContainerFp">
