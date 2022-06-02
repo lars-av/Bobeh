@@ -7,6 +7,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  background-color: $document-background-color;
+}
+
 h1 {
   font-size: 2.5rem;
   font-family: "Montserrat", sans-serif;
@@ -46,6 +50,8 @@ h3 {
 p {
   font-size: 1.1rem;
   font-family: "Montserrat", sans-serif;
+  line-height: 1.7rem;
+  padding: 0.5rem 0;
 }
 
 a {
@@ -186,13 +192,13 @@ button {
   }
 }
 //sections
-section {
-  margin: 6rem 0;
+// section {
+//   margin: 6rem 0;
 
-  @include bp(tablet) {
-    margin: 3rem 0;
-  }
-}
+//   @include bp(tablet) {
+//     margin: 3rem 0;
+//   }
+// }
 
 //Header of the section
 .header-text {
@@ -207,6 +213,7 @@ section {
   column-count: 2;
   column-gap: 2rem;
   line-height: 1.75rem;
+  margin-top: 1rem;
 
   @include bp(tablet) {
     column-count: 1;
