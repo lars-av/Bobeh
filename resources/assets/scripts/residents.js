@@ -42,16 +42,33 @@ for (let i = 0 ; i< sections.length ; i++) {
   })
 }
 let flowerTarget = document.querySelector('.flower-path')
+let flowerValues = document.querySelector('.flower-path-values')
 let targetGroup = document.querySelector('.target-flower')
+let coreValues = document.querySelector('.values-flower')
 
 flowerTarget.addEventListener('load', () => {
   let svgDoc = flowerTarget.contentDocument
-  let actualSVG = svgDoc.getElementById('actual-flower')
   let actualSVGClass = svgDoc.querySelector('.target-flower-svg')
-  console.log(actualSVG.getTotalLength())
-  console.log(actualSVGClass)
-  console.log(svgDoc)
+  window.addEventListener('scroll', () => {
+    if( targetGroup.getBoundingClientRect().top < window.innerHeight /2) {
+      actualSVGClass.classList.add('svg-animation')
+    }
+  })
   targetGroup.appendChild(actualSVGClass)
+})
+
+flowerValues.addEventListener('load', () => {
+  let svgValuesDoc = flowerValues.contentDocument
+  let svgValues= svgValuesDoc.querySelector('.flower-values')
+
+  window.addEventListener('scroll',() => {
+    console.log( targetGroup.getBoundingClientRect().top, coreValues.getBoundingClientRect().top)
+    console.log('length = ',svgValues)
+    if (coreValues.getBoundingClientRect().top < window.innerHeight /2){
+      svgValues.classList.add('svg-animation')
+    }
+  })
+  coreValues.appendChild(svgValues)
 })
 
 

@@ -116,7 +116,7 @@
   <div class="wrapper-frontpage">
     <div class=" core-values">
       <div class="values-flower">
-        <img src="/wp-content/themes/Bobeh/resources/assets/images/flowervalues.svg" alt="">
+        <object data="/wp-content/themes/Bobeh/resources/assets/images/flowervalues.svg" type="image/svg+xml" class="flower-path-values"></object>
       </div>
         <div class="core-values-description flex-center">
         <h2>Core values</h2>
