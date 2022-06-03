@@ -2,6 +2,11 @@
 @section('content')
 <input type="checkbox" id="checkBox" name="ticked" onClick= >
 
+@php
+    $flexibleContent = get_field('flexiblecontent')
+@endphp
+@dump($flexibleContent)
+
 {{-- Side navigation --}}
   <div class="wrapper-large">
     @if ("true" == "true")
@@ -21,9 +26,17 @@
 
     {{-- Content --}}
     <div  @if("true" == "true") class="wrap-side-content" @else class="wrap-only-content" @endif>
-      @include('partials/residents.hero-text')
-      @include('partials/residents.social-life')
-      @include('partials/residents.day-to-day')
+
+      
+@include('partials/residents.hero-text')
+
+@foreach ($flexibleContent as $fc)
+@if ($fc['acf_fc_layout'] == 'section:_image_text_button_list')
+  @include('partials/residents/social-life')
+@endif
+
+@endforeach
+
       @include('partials/residents.process')
       @include('partials/residents.self-determination')
       @include('partials/residents.duty-of-care')
