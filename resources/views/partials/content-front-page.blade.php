@@ -73,7 +73,11 @@
   <div class="wrapper-frontpage">
   <div class="target-group ">
       <div class="target-flower">
-        <img src="/wp-content/themes/Bobeh/resources/assets/images/targetflower.svg" alt="">
+        {{-- <svg height="300" width="500"class="target-flower">
+          <path fill="#35AB99" fill-opacity=".47" d="M108.524 272.917c.087-.428.167-.862.254-1.29.098.032.197.071.296.104a96.55 96.55 0 0 1-.581 1.16l.031.026Z"/>
+        </svg> --}}
+        <object data="/wp-content/themes/Bobeh/resources/assets/images/targetflower.svg" type="image/svg+xml" class="flower-path"></object>
+        {{-- <img src="/wp-content/themes/Bobeh/resources/assets/images/targetflower.svg" class="flower-path" alt=""> --}}
       </div>
     <!-- Target group text -->
     <div class="target-group-description ">
@@ -112,7 +116,7 @@
   <div class="wrapper-frontpage">
     <div class=" core-values">
       <div class="values-flower">
-        <img src="/wp-content/themes/Bobeh/resources/assets/images/flowervalues.svg" alt="">
+        <object data="/wp-content/themes/Bobeh/resources/assets/images/flowervalues.svg" type="image/svg+xml" class="flower-path-values"></object>
       </div>
         <div class="core-values-description flex-center">
         <h2>Core values</h2>

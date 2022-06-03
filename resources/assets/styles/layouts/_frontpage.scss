@@ -257,6 +257,7 @@
 //Target group
 .target-group-description {
   max-width: 40%;
+  z-index: 100;
 
   @include bp (tablet) {
     max-width: 80%;
@@ -272,6 +273,14 @@
   @include bp (phone) {
     justify-content: center;
     text-align: center;
+  }
+}
+
+.svg-animation {
+  animation: stroke 2.5s ease-in-out forwards;
+
+  path {
+    animation: dash 3.25s ease-in-out forwards, color 3.25s linear forwards;
   }
 }
 
@@ -293,24 +302,46 @@
 
   .target-flower {
     position: absolute;
-    opacity: 40%;
-    left: -10rem;
+    display: flex;
+    opacity: 60%;
+    top: 0;
 
-    @include bp (desktop) {
-      left: 25rem;
-    }
+    svg {
+      position: absolute;
+      left: -10rem;
+      stroke: $brand-primary;
+      stroke-width: 1;
 
-    @include bp (smalldesktop) {
-      object-fit: cover;
-      left: 20rem;
-    }
+      @include bp (desktop) {
+        left: 25rem;
+      }
 
-    @include bp (tablet) {
-      left: 50%;
-      top: -2rem;
-      opacity: 20%;
-      transform: translate(-50%, 20%);
-      stroke-width: 5;
+      @include bp (smalldesktop) {
+        object-fit: cover;
+        left: 20rem;
+      }
+
+      @include bp (tablet) {
+        right: 0;
+        transform: translate(0%, -20%);
+        top: -2rem;
+      }
+
+      @include bp (tabletportsmall) {
+        left: 50%;
+        transform: translate(-50%, 0%);
+        top: 2rem;
+      }
+
+      @include bp (phone) {
+        top: 2rem;
+      }
+
+      path {
+        fill: $section-blue;
+        stroke-dasharray: 8723;
+        stroke-dashoffset: 8723;
+      }
     }
   }
 
@@ -382,36 +413,61 @@ ul.tabs li.current1 {
 }
 
 //Core values
+/* stylelint-disable no-descending-specificity */
 
 .core-values {
   display: grid;
   gap: clamp(2rem, 5vw, 5rem);
   grid-template-columns: 1fr 700px;
   position: relative;
-  z-index: 2;
+  width: 100%;
+  z-index: 100;
 
   .values-flower {
+    display: flex;
+    justify-content: center;
     position: absolute;
-    opacity: 40%;
     z-index: 1;
-    left: -10rem;
     top: -5rem;
+    opacity: 60%;
 
-    @include bp (desktop) {
-      left: 25rem;
-    }
+    svg {
+      position: absolute;
+      left: -10rem;
+      stroke: $brand-primary;
+      stroke-width: 1;
 
-    @include bp (smalldesktop) {
-      object-fit: cover;
-      left: 20rem;
-    }
+      @include bp (desktop) {
+        left: 30rem;
+      }
 
-    @include bp (tablet) {
-      left: 50%;
-      top: -2rem;
-      opacity: 20%;
-      transform: translate(-50%, 20%);
-      stroke-width: 5;
+      @include bp (smalldesktop) {
+        object-fit: cover;
+        left: 30rem;
+      }
+
+      @include bp (tablet) {
+        right: 0;
+        transform: translate(80%, -20%);
+        top: -2rem;
+      }
+
+      @include bp (tabletportsmall) {
+        left: 20%;
+        transform: translate(-10%, -10%);
+        top: -2rem;
+      }
+
+      @include bp (phone) {
+        top: -2rem;
+        transform: translate(-50%, -0%);
+      }
+
+      path {
+        fill: $section-blue;
+        stroke-dasharray: 8723;
+        stroke-dashoffset: 8723;
+      }
     }
   }
 
@@ -424,6 +480,7 @@ ul.tabs li.current1 {
 .core-values-description {
   display: flex;
   flex-direction: column;
+  z-index: 100;
 
   @include bp (tablet) {
     max-width: 80%;
@@ -537,5 +594,26 @@ ul.tabs li.current1 {
 
   @include bp(tablet) {
     margin: 3rem 0;
+  }
+}
+
+@keyframes dash {
+  to {
+    opacity: 60%;
+    fill: $brand-primary;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes color {
+  to {
+    opacity: 60%;
+    fill: $brand-primary;
+  }
+}
+
+@keyframes stroke {
+  to {
+    stroke-width: 0;
   }
 }
