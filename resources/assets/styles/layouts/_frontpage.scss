@@ -306,6 +306,10 @@
     opacity: 60%;
     top: 0;
 
+    object {
+      display: none;
+    }
+
     svg {
       position: absolute;
       left: -10rem;
@@ -323,7 +327,7 @@
 
       @include bp (tablet) {
         right: 0;
-        transform: translate(0%, -20%);
+        transform: translate(-50%, -20%);
         top: -2rem;
       }
 
@@ -420,7 +424,6 @@ ul.tabs li.current1 {
   gap: clamp(2rem, 5vw, 5rem);
   grid-template-columns: 1fr 700px;
   position: relative;
-  width: 100%;
   z-index: 100;
 
   .values-flower {
@@ -429,7 +432,12 @@ ul.tabs li.current1 {
     position: absolute;
     z-index: 1;
     top: -5rem;
+    width: 100%;
     opacity: 60%;
+
+    object {
+      display: none;
+    }
 
     svg {
       position: absolute;
@@ -438,29 +446,28 @@ ul.tabs li.current1 {
       stroke-width: 1;
 
       @include bp (desktop) {
-        left: 30rem;
+        left: 25rem;
       }
 
       @include bp (smalldesktop) {
         object-fit: cover;
-        left: 30rem;
+        left: 20rem;
       }
 
       @include bp (tablet) {
-        right: 0;
-        transform: translate(80%, -20%);
+        left: 100%;
+        transform: translate(-100%, -20%);
         top: -2rem;
       }
 
       @include bp (tabletportsmall) {
-        left: 20%;
-        transform: translate(-10%, -10%);
-        top: -2rem;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        top: 2rem;
       }
 
       @include bp (phone) {
-        top: -2rem;
-        transform: translate(-50%, -0%);
+        top: 2rem;
       }
 
       path {
