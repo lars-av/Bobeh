@@ -1,30 +1,28 @@
-<section id="process-of-applying">
-  <h2>Process of applying</h2>
-  <p class="text-field">Sometime individuals would like to apply for a housing but we cant help  unless they follow the process.</p>
+<section id="{{str_replace(' ', '', $fc['section_name'])}}">
+  <h2>{{$fc['section_name']}}</h2>
+  
+  <p class="text-field">{!!$fc['section_description'] !!}</p>
   <div class="infographics" id="process-banner">
     <div class="infographics-grid" id="process">
+
+      @foreach ($fc['repeater_text_field_and_icon'] as $rf)
       <div class="infographic-process">
-        <i class="fa-solid fa-user-tie icon-process"></i>
+        <i class="{{$rf['icon']}} icon-process"></i>
+        <p>{{$rf['icon']}}</p>
+        <i class="fa-solid fa-person"></i>
         <h5>
-          Contact your caseworker
+          {{$rf['title']}}
         </h5>
-        <p>In order to create a valid application for our housing options you must contact your caseworker first.</p>
+        <p>{{$rf['paragraph']}}</p>
       </div>
-      <div class="infographic-process">
-        <i class="fa-solid fa-file-circle-check icon-process"></i>
-        <h5>
-          Application is created
-        </h5>
-        <p>We recieve an application from your caseworker regarding your case with the details we need.</p>
-      </div>
-      <div class="infographic-process">
-        <i class="fa-solid fa-circle-check icon-process"></i>
-        <h5>
-          Admission
-        </h5>
-        <p>After we review the application, we evaluate if we are the right fit for you and you can move in.</p>
-      </div>
+      @endforeach
     </div>
-    <p class="text-field" style="margin-bottom: 0.5rem;">For more information feel free to reach out and ask.</p>
-   <button class="btnRounded">Contact us</button>
+    @if ($fc['additional_info'])
+    <p class="text-field" style="margin-bottom: 0.5rem;">{{$fc['additional_info']}}</p>
+    @endif
+    
+    @if ($fc['button_text'])
+    <a href="{{$fc['button_link']}}" class="btnRounded">{{$fc['button_text']}}</a> 
+    @endif
+
 </section>
