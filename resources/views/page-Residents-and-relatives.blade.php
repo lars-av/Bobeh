@@ -6,7 +6,6 @@
     $flexibleContent = get_field('flexiblecontent')
 @endphp
 
-@dump($flexibleContent)
 
 {{-- Side navigation --}}
   <div class="wrapper-large">

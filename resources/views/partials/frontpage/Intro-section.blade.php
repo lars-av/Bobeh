@@ -1,10 +1,12 @@
+@dump($flexibleContent)
+
 <section class="no-margin">
     <div class="flex-frontpage">
     <div class=" front-title flex-center text-container-frontpage">
       <div>
-        <h1 style="">Bo-og Behandlingscenter Blokhus</h1>
-        {!! get_field('frontpage_paragraph') !!}
-        <a class="btnRounded" style="margin-top: 1rem;" href="">See available spots</a>
+        <h1 style="">{{$fc['main_heading']}}</h1>
+        {!! $fc['paragraph'] !!}
+        <a class="btnRounded" style="margin-top: 1rem;" href="{{$fc['button_link']}}">{{$fc['button_text']}}</a>
       </div>
     </div>
 

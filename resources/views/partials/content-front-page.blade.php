@@ -1,11 +1,4 @@
 
-</section>
-            <div class="wrapper-frontpage">
-          <section class="target competencies">
-      <div class="competencies-container flex-center">
-        <h2>Competencies and Staff</h2>
-</section>
-
 {{-- <section class="flexContainerFp">
     <div class="flexChildFp">
         <h1>Bo-og Behandlingscenter Blokhus</h1>

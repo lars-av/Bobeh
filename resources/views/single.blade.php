@@ -26,10 +26,8 @@
 <div class="wrap-side-content">
 
 {{-- id="{{str_replace(' ', '', $fc['section_name'])}}" --}}
+@include('partials/specific-house-post/house-intro')
 @foreach ($flexibleContent as $fc)
-@if ($fc['acf_fc_layout'] == 'introduction_section')
-  @include('partials/specific-house-post/house-intro')
-@endif
 @if ($fc['acf_fc_layout'] == 'section:_text_image_text')
   @include('partials/specific-house-post/about-house')
 @endif

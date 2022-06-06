@@ -1,3 +1,4 @@
+
 <section class="blue-section">
     <div class="wrapper-frontpage">
     <div class="target-group ">
@@ -9,29 +10,24 @@
         </div>
       <!-- Target group text -->
       <div class="target-group-description ">
-      <h2>Our target group</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit eos repudiandae a accusantium ullam aperiam assumenda? Dignissimos laudantium quaerat dolor! Fugiat unde architecto quia tenetur sapiente molestiae delectus debitis modi.</p>
+        <h2>{{$fc['paragraph_title']}}</h2>
+        {!! $fc['paragraph'] !!}
       </div>
   
-  
   <!--Tabs v2-->
-  
       <div class="tabs-container">
-  
-          @php
-              $h = 1 @endphp
-             @php $p = 1 @endphp
-             @php $targetgroups = get_field('target_group_list')
-           @endphp
+          @php $h = 1 @endphp
+          @php $p = 1 @endphp
+          @php $tabs = $fc['button_repeater'] @endphp
           <ul class="tabs">
-              @foreach ($targetgroups as $tgs)
-              <li class="tab-link" data-tab="tab-{{$h}}">{{ $tgs['target_group_list_title'] }}</li>
+              @foreach ($tabs as $tab)
+              <li class="tab-link current{{$h}}" data-tab="tab-{{$h}}">{{ $tab['tab_title'] }}</li>
               @php $h++ @endphp
               @endforeach
           </ul>
-          @foreach ($targetgroups as $bgs)
+          @foreach ($tabs as $tab)
           <div id="tab-{{$p}}" class="tab-content current{{$p}}">
-              {!!$bgs['list_of_items'] !!}
+              {!!$tab['tab_contents'] !!}
           </div>
           @php $p++ @endphp
           @endforeach
