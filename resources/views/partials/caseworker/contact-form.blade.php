@@ -1,3 +1,7 @@
+@php
+    $contactperson = get_field('contact_person', 'option')
+@endphp
+
 <section>
   <h1 id="contact-us">Contact us</h1>
   <p>
@@ -6,26 +10,15 @@
     If you need to send CPR sensitive documentation, please do this by using either our mail: <b>sikkermail@bobeh-blokhus.dk</b> or by sending directly through our CVR. number: <b>32409946</b>
   </p>
   <div class="contact-staff">
+    @foreach ($contactperson as $cp)
     <div class="person">
-      <h4>Principal and daily leader at Skovkærhus</h4>
-      <h5>Gitte Simonsen</h5>
-      <h6><i class="fa-solid fa-phone" style="margin: 0 0.5rem 0 0;"></i>25 35 55 94</h6>
-      <h6><i class="fa-solid fa-envelope" style="margin: 0 0.5rem 0 0;"></i>gitte@bobeh-blokhus.dk</h6>
+      <p>{{$cp['contact_person_name']}}</p>
+      <p>{{$cp['contact_person_title']}}</p>
+      <a href="telto:{{$cp['contact_person_phone_number']}}"><i class="fa-solid fa-phone" style="margin: 0 0.5rem 0 0;"></i>{{$cp['contact_person_phone_number']}} </a>
+     <a href="mailto:{{$cp['contact_person_email']}}"><i class="fa-solid fa-envelope" style="margin: 0 0.5rem 0 0;"></i>{{$cp['contact_person_email']}} </a>
     </div>
-
-    <div class="person">
-      <h4>Manager and daily leader at Purkærhus</h4>
-      <h5>Anitta Thorsen</h5>
-      <h6><i class="fa-solid fa-phone" style="margin: 0 0.5rem 0 0;"></i>24 25 71 12</h6>
-      <h6><i class="fa-solid fa-envelope" style="margin: 0 0.5rem 0 0;"></i>anitta@bobeh-blokhus.dk</h6>
-    </div>
-
-    <div class="person">
-      <h4>Social worker</h4>
-      <h5>Christina Baggesen</h5>
-      <h6><i class="fa-solid fa-phone" style="margin: 0 0.5rem 0 0;"></i>26 36 23 31 </h6>
-      <h6><i class="fa-solid fa-envelope" style="margin: 0 0.5rem 0 0;"></i>christina@bobeh-blokhus.dk</h6>
-    </div>
+    @endforeach
+    
   </div>
 
   <div class="contact-house" id="find-us">

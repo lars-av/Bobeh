@@ -175,20 +175,20 @@
   }
 
   .person {
-    background-color: #35ab99;
-    color: #fff;
+    color: black;
     padding: 1.5rem;
-    border-radius: 10px;
+    border-radius: $border-radius-small;
     width: 100%;
-  }
+    border: 2px $brand-primary solid;
 
-  h4 {
-    padding: 0 0 1rem 0;
-    text-align: center;
-  }
+    a {
+      color: black;
+      display: block;
+    }
 
-  h6 {
-    padding: 0.5rem 0;
+    path {
+      color: $brand-primary;
+    }
   }
 }
 

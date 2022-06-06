@@ -140,6 +140,7 @@ button {
       position: fixed;
       margin: 6rem 0;
       top: 15%;
+      width: 20%;
 
       a {
         color: black;
@@ -153,12 +154,12 @@ button {
 
         li {
           padding: 1rem;
-          font-size: 1.25rem;
+          font-size: 1rem;
           margin: 0.25rem 0;
           transition: all 0.5s ease;
 
           @include bp(tabletland) {
-            font-size: 1.25rem;
+            font-size: 1rem;
           }
 
           .anchor {

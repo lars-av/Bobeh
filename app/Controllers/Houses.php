@@ -16,7 +16,9 @@ class Houses extends Controller
             return [
                 'title' => apply_filters('get_the_title', $post->post_title),
                 'content' => apply_filters('get_the_content', $post->post_content),
-                'link' => get_permalink($post->ID)
+                'link' => get_permalink($post->ID),
+                'houseInformation' => get_field('house_introduction', $post->ID),
+                
             ];
         }, $args);
     }
