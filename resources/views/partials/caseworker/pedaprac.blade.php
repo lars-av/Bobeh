@@ -7,11 +7,10 @@
 
   <div class="text-field-1col">
     {!!$fc['text']!!}
-    <button class="btnRounded" id="caseworker-btn-2">Competencies and staff</button>
+    <a class="btnRounded" id="caseworker-btn-2">Competencies and staff</a>
   </div>
 </div>
   <div class="pedaprac-methods">
-
     @foreach ($fc['repeatable_textfield'] as $tf)
         <div class="divspecific-paragraph">
           <h3>{{$tf['textfield_title']}}</h3>

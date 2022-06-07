@@ -200,7 +200,8 @@
 //News section
 
 .news {
-  padding: 3rem 0;
+  padding: 3rem auto;
+  margin: 4rem auto;
 }
 
 .banner-news {
@@ -221,17 +222,21 @@
 }
 
 .news-card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: $spacer;
+  display: flex;
+  // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
 
   @include bp(tabletportsmall) {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    // grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
 }
 
 .news-card {
   height: 100%;
+  width: 33%;
   box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
   border-radius: $border-radius-small;
   display: flex;
@@ -239,19 +244,30 @@
 
   img {
     border-radius: $border-radius-small $border-radius-small 0 0;
+  }
 
-    @include bp(tabletportsmall) {
-      height: 20vh;
-    }
+  @include bp(tabletportsmall) {
+    margin: 0 1rem;
+    width: 100%;
   }
 }
 
 .news-card-text {
   padding: 1rem;
-  min-height: 100px;
-  height: 150px;
-  max-height: 250px;
+  min-height: 200px;
   border-radius: 0 0 $border-radius-small $border-radius-small;
+
+  @include bp(tabletportsmall) {
+    min-height: undet;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
 }
 
 //Target group

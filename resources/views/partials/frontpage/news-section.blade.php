@@ -16,10 +16,9 @@
         <img src="http://bobehandling.test/wp-content/uploads/2022/05/Purkaervej-scaled.jpg" alt="">
         <div class="news-card-text">
             <h4>{{$singleNews['title']}}</h4>
-            {!! substr($singleNews['flex'], 0, 100) !!}..
+            {!! substr($singleNews['flex'], 0, 100) !!}...
         </div>
     </div>
     @endforeach
     </div>
 </section>
-  

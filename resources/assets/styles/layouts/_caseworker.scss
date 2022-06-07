@@ -1,5 +1,5 @@
 .infographics-case {
-  margin: 4rem 0 0 0;
+  margin: 2.5rem 0 1rem 0;
   width: 100%;
 
   #process {
@@ -14,16 +14,14 @@
 
   .infographics-grid {
     display: flex;
-    gap: 2rem;
-    justify-content: space-between;
+    gap: 1rem;
 
     .infographic-column {
       display: flex;
       flex-direction: column;
-      max-width: 33%;
 
       ul {
-        margin: 1rem 1rem;
+        margin: 0 1rem;
         font-family: "Montserrat", sans-serif;
         line-height: 1.4rem;
         list-style-type: none;
@@ -87,34 +85,57 @@
 
   .ourprocess-wrap {
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
+    justify-content: space-between;
   }
 
   .text-field-1col {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-self: center;
   }
 
   h3 {
-    margin: 1rem 0;
+    margin: 0;
   }
 
   .h4-caseworker {
     color: black;
     margin: 1rem 0;
-    min-height: 2rem;
+    min-height: 1rem;
+    font-size: 1.6rem;
   }
 
   .btnRounded {
+    align-self: flex-start;
     margin: 2rem 0;
   }
 }
 
+.action-plan {
+  margin-top: 5rem;
+}
+
+.action-plan-grid-p {
+  font-size: 1rem;
+}
+
+.action-grid {
+  padding: 0;
+}
+
+.action-grid-col {
+  padding: 0;
+}
+
 .half-section-paragraph {
-  width: 50%;
+  width: 60%;
+  margin: 5rem 0;
 
   h3 {
-    margin: 4rem 0 1rem 0;
+    margin: 0;
   }
 
   .tilbudportal-link {
@@ -127,17 +148,73 @@
 
 .pedaprac-methods {
   margin: 2rem 0;
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 2rem;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+
+  .divspecific-paragraph {
+    margin: 1rem;
+    max-width: 40%;
+  }
 }
+/* stylelint-disable no-descending-specificity */
 
 .reachout-section {
   background-color: $brand-primary;
   border-radius: 1rem;
-  padding: 1rem 2rem;
+  padding: 4rem;
+  height: clamp(max-content, 30vh, 4rem);
+  margin: 1rem 0;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+
+  @include bp (tabletportsmall) {
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reachout-text {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+
+    @include bp (tabletportsmall) {
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+
+    a {
+      margin: 0.25rem;
+    }
+
+    h2 {
+      font-size: 2.8rem;
+
+      @include bp (tabletportsmall) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  p {
+    margin: 0.25rem;
+    padding: 0;
+    font-size: 1.2rem;
+
+    @include bp (tabletportsmall) {
+      font-size: 1rem;
+    }
+  }
 
   h6 {
     padding: 0.5rem 0;
@@ -151,11 +228,18 @@
   }
 
   .text {
-    width: 70%;
+    width: 60%;
   }
 
   .reachout-button {
-    width: 30%;
+    min-width: 30%;
+    display: flex;
+    text-align: center;
+    align-self: center;
+
+    @include bp (tabletportsmall) {
+      min-width: 60%;
+    }
   }
 
   #caseworker-btn-3 {
