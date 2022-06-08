@@ -1,4 +1,3 @@
-@dump($flexibleContent)
 
 <section class="no-margin">
     <div class="flex-frontpage">

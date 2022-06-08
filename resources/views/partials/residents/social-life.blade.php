@@ -1,7 +1,7 @@
-<section class="image-full-width" id="{{str_replace(' ', '', $fc['section_name'])}}">
+<section class="image-full-width residents" id="{{str_replace(' ', '', $fc['section_name'])}}">
 <h2>{{$fc['section_name']}}</h2>
 <img src="{{$fc['image']['sizes']['large']}}" class="living-conditions-img-2"alt="{{$fc['image']['alt']}}">
- 
+
 <div class="image-text">
   <div class="text-field">
 {!! $fc['text'] !!}
