@@ -5,7 +5,7 @@
       <p class="line-height">
         {!! $fc['short_description'] !!}
       </p>
-      <img src="{{$fc['image']['sizes']['large']}}" class="living-conditions-img-2"alt="{{$fc['image']['alt']}}">      
+      <img src="{{$fc['image']['sizes']['large']}}" class="living-conditions-img-2"alt="{{$fc['image']['alt']}}">
     </div>
     <div class="info">
      {!! $fc['list'] !!}

@@ -12,7 +12,7 @@
   <div>
   </div>
 
-  <div class="infographics resident-infograph">
+  <div class="infographics residents-infograph">
     <h3>Common tasks and areas where we can help with: </h3>
     <div class="infographics-grid">
       <div class="infographic-column">
