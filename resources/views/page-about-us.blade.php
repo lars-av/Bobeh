@@ -28,9 +28,13 @@ $flexibleContent = get_field('flexible_content')
         @if ($fc['acf_fc_layout'] == 'core_values')
           @include('partials/about-us.core-values')
         @endif
+        @if ($fc['acf_fc_layout'] == 'core_goals')
+          @include('partials/about-us.core-goals')
+        @endif
+        @if ($fc['acf_fc_layout'] == 'staff')
+          @include('partials/about-us.staff')
+        @endif
       @endforeach
-      @include('partials/about-us.core-goals')
-      @include('partials/about-us.staff')
       @include('partials/about-us.foundation')
       @include('partials/about-us.jobs')
     </div>

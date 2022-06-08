@@ -1,8 +1,9 @@
 <section id="{{str_replace(' ', '', $fc['section_name'])}}">
-  @dump($flexibleContent)
   <div style="margin-bottom: 2rem;">
     <h2>{{$fc['section_name']}}</h2>
-    {!!$fc['core_values_paragrapgh']!!}
+    <p class="intro-paragraph">
+      {!!$fc['core_values_paragrapgh']!!}
+    </p>
   </div>
   <div class="values-layout">
     @foreach($fc['core_values_repeater'] as $fcr)
