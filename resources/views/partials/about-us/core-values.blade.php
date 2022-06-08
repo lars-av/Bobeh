@@ -1,38 +1,16 @@
-<section id="core-values">
+<section id="{{str_replace(' ', '', $fc['section_name'])}}">
+  @dump($flexibleContent)
   <div style="margin-bottom: 2rem;">
-    <h2>Core Values</h2>
-    <p style="max-width: 75ch; line-height: 1.5rem;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione provident doloribus repudiandae incidunt eius dolorum? Animi nobis blanditiis asperiores dolores!</p>
+    <h2>{{$fc['section_name']}}</h2>
+    {!!$fc['core_values_paragrapgh']!!}
   </div>
   <div class="values-layout">
-    <div class="values-left">
-    <div class="value col1">
-      <h1>Value</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, hic!</p>
+    @foreach($fc['core_values_repeater'] as $fcr)
+    <div class="value">
+      <h3>{{$fcr['value_title']}}</h3>
+      <p>{{$fcr['value_paragraph']}}</p>
     </div>
-    <div class="value col1">
-      <h1>Value</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, hic!</p>
-    </div>
-    <div class="value col1">
-      <h1>Value</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, hic!</p>
-    </div>
-  </div>
-  <div class="values-right">
-
-    <div class="value col2">
-      <h1>Value</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, hic!</p>
-    </div>
-    <div class="value col2">
-      <h1>Value</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, hic!</p>
-    </div>
-    <div class="value col2">
-      <h1>Value</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, hic!</p>
-    </div>
-  </div>
+    @endforeach
   </div>
 
 </section>
