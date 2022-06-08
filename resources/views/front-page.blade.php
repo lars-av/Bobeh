@@ -12,7 +12,7 @@
 
 @foreach ($flexibleContent as $fc)
 @if ($fc['acf_fc_layout'] == 'section:_header_section')
-@include('partials/frontpage.intro-section')
+@include('partials/frontpage.Intro-section')
 @endif
 @if ($fc['acf_fc_layout'] == 'section:_big_buttons_and_short_text')
 @include('partials/frontpage.entrypoint-links')
