@@ -21,10 +21,12 @@
 
     @foreach ($fc['repeatable_list'] as $rl)
     <div class="infographic-column">
-      <h4>
-        <i class="fa-solid fa-person icon"></i>
-        {{$rl['list_titel']}}
-      </h4>
+      <div class="infographic-icon-white">
+        {!!$rl['icon']!!}
+        <h4>
+          {{$rl['list_titel']}}
+        </h4>
+      </div>
       {!! $rl['list'] !!}
     </div>
     @endforeach

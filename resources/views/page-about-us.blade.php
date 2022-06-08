@@ -10,15 +10,15 @@ $flexibleContent = get_field('flexible_content')
     <div class="wrap-side-nav">
       <div class="side-nav">
         <ul>
-           <a href="#core-values"><li class="anchor" >Core Values</li></a>
-           <a href="#core-goals"><li class="anchor" >Core Goals</li></a>
-           <a href="#staff"><li class="anchor" >Staff</li></a>
-           <a href="#foundation"><li class="anchor" >Foundation</li></a>
-           <a href="#jobs"><li class="anchor" >Jobs</li></a>
+          @foreach ($flexibleContent as $sh)
+          @if ($sh['section_name'])
+            <a href="#{{str_replace(' ', '', $sh['section_name'])}}"><li class="anchor" >{{$sh['section_name']}}</li></a>
+          @endif
+          @endforeach
         </ul>
       </div>
     </div>
-    @endif
+  @endif
 
     {{-- Content --}}
 

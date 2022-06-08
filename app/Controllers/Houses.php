@@ -18,7 +18,8 @@ class Houses extends Controller
                 'content' => apply_filters('get_the_content', $post->post_content),
                 'link' => get_permalink($post->ID),
                 'houseInformation' => get_field('house_introduction', $post->ID),
-                
+                'featured-image' => get_the_post_thumbnail_url($post->ID),
+
             ];
         }, $args);
     }

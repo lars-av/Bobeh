@@ -1,4 +1,4 @@
-<section id="staff">
+<section id="{{str_replace(' ', '', $fc['section_name'])}}">
 <h2>{{$fc ['section_name']}}</h2>
 <div class="management">
 <h3>{{$fc ['sub-section-title']}}</h3>

@@ -3,10 +3,21 @@
     <div class="footer-child">
       <h4>Contact information</h4>
       <ul>
-        <li><i class="fab fa-twitter"></i> Gitte Simonsen</li>
-        <li> <a href="mailto:{{get_field('company_email', 'options')}}"><i class="fab fa-twitter"></i> {{get_field('company_email', 'options')}}</li></a>
-        <li> <a href="mailto:{{get_field('company_phone_number', 'options')}}"><i class="fab fa-twitter"></i> {{get_field('company_phone_number', 'options')}}</li></a>
-        <li><i class="fab fa-twitter"></i> Purkærvej 55 9490 Pandrup</li>
+        <li>
+          {!!get_field('primary_contact_person_icon', 'options')!!}
+          {{get_field('primary_contact_person', 'options')}}</li>
+        <li>
+          <a href="mailto:{{get_field('company_email', 'options')}}">
+            {!!get_field('company_address_icon', 'options')!!}
+            {{get_field('company_address', 'options')}}
+          </a>
+        </li>
+        <li>
+          <a href="mailto:{{get_field('company_phone_number', 'options')}}">
+            {!!get_field('company_phone_number_icon', 'options')!!}
+            {{get_field('company_phone_number', 'options')}}
+          </a>
+            </li>
       </ul>
     </div>
     <div class="footer-child">
