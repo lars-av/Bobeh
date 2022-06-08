@@ -2,7 +2,7 @@
     <div class="flex-container-entry">
     <div class="focused-entry-points">
         @foreach ($fc['button_repeater'] as $link)
-            <a href="{{ $link['button_link'] }}" class="card">
+            <a href="{{ $link['button_link'] }}" class="card-fp">
                 <img src="{{ $link['button_image']['sizes']['large'] }}"
                     @if ($link['button_image']['alt']) alt="{{ $link['button_image']['alt'] }}" @endif>
                   <div class="entry-point-card-text">

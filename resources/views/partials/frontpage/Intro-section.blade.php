@@ -10,7 +10,7 @@
     </div>
 
     <div class="flex-container-frontpage image-frontpage">
-        <img src="http://bobehandling.test/wp-content/uploads/2022/05/Purkaervej-scaled.jpg" alt="">
+        <img src={{$fc['image__image_slider']['sizes']['large']}} alt="">
     </div>
 </div>
 </section>

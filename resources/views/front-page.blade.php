@@ -12,10 +12,11 @@
 
 @foreach ($flexibleContent as $fc)
 @if ($fc['acf_fc_layout'] == 'section:_header_section')
-@include('partials/frontpage.intro-section')
+@include('partials/frontpage.Intro-section')
 @endif
 @if ($fc['acf_fc_layout'] == 'section:_big_buttons_and_short_text')
 @include('partials/frontpage.entrypoint-links')
+@include('partials/frontpage.news-section')
 @endif
 @if ($fc['acf_fc_layout'] == 'section:_short_text_and_repeatable_tabs')
 @include('partials/frontpage.tabs-section')
@@ -29,7 +30,6 @@
 
 @endforeach
 
-@include('partials/frontpage.news-section')
 @include('partials/caseworker.reachout')
 @include('partials.content-front-page')
 

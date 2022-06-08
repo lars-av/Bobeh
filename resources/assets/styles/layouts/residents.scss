@@ -89,6 +89,25 @@
   }
 }
 
+.infographic-title {
+  svg {
+    margin: 0;
+  }
+}
+
+.infographic-icon-white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+
+  svg {
+    color: $brand-primary !important;
+    width: 3rem;
+    margin: 0;
+  }
+}
+
 .infographics {
   margin: 4rem 0;
   width: 100%;
@@ -218,7 +237,7 @@
     }
   }
 
-  .icon-process {
+  svg {
     font-size: 4rem;
     margin: 0 0 1rem 0;
     color: white;

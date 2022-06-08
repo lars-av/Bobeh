@@ -26,7 +26,7 @@
     {{-- Content --}}
     <div  @if("true" == "true") class="wrap-side-content" @else class="wrap-only-content" @endif>
 
-      
+
 @include('partials/residents.hero-text')
 
 @foreach ($flexibleContent as $fc)
