@@ -5,7 +5,6 @@
   <div class="image-text">
     <div class="text-field">
       <p>Bo- og Behandlingscenter Blokhus is like a large family where everyone participates and share responsibilities. Everyday we cook, wash clothes, clean and other daily routines that needs to be completed.
-        <br><br>
         We put a strong emphasis on providing a safe frame with a predictable structure and present personnel. As we have a lot of different residents, we want everyone to feel they belong.
       </p>
     </div>
@@ -13,7 +12,7 @@
   <div>
   </div>
 
-  <div class="infographics">
+  <div class="infographics resident-infograph">
     <h3>Common tasks and areas where we can help with: </h3>
     <div class="infographics-grid">
       <div class="infographic-column">

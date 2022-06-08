@@ -6,8 +6,6 @@
         <li><i class="fab fa-twitter"></i> Gitte Simonsen</li>
         <li> <a href="mailto:{{get_field('company_email', 'options')}}"><i class="fab fa-twitter"></i> {{get_field('company_email', 'options')}}</li></a>
         <li> <a href="mailto:{{get_field('company_phone_number', 'options')}}"><i class="fab fa-twitter"></i> {{get_field('company_phone_number', 'options')}}</li></a>
-       
-        <li><i class="fab fa-twitter"></i> 26 35 55 94</li>
         <li><i class="fab fa-twitter"></i> Purkærvej 55 9490 Pandrup</li>
       </ul>
     </div>
@@ -16,13 +14,13 @@
       <ul>
         @php $house_list = Houses::House(-1) @endphp
         @foreach ($house_list as $house)
-        we need to be black 
             <li><a href="{{$house['link']}}">{{$house['houseInformation']['house_name']}}</a></li>
         @endforeach
       </ul>
     </div>
-    <div class="footer-child">
+    <div class="footer-child portal">
         <div class="image-container-footer">
+         <h4> Tilbudsportal</h4>
           @php
               $imageFooter = get_field('footer_image', 'options')
           @endphp

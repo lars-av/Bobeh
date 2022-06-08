@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @php
-  $flexibleContent = get_field('flexible_content')   
+  $flexibleContent = get_field('flexible_content')
 @endphp
 
 
@@ -29,8 +29,8 @@
 
 @endforeach
 
-@include('partials/caseworker.reachout')
 @include('partials/frontpage.news-section')
-@include('partials.content-front-page') 
+@include('partials/caseworker.reachout')
+@include('partials.content-front-page')
 
 @endsection

@@ -39,6 +39,14 @@
   }
 }
 
+.residents {
+  margin-bottom: 6rem;
+}
+
+.residents-infograph {
+  margin: 0;
+}
+
 #process-banner {
   margin: 2rem 0;
 }
@@ -93,7 +101,7 @@
   }
 
   h3 {
-    margin: 2rem 0;
+    margin: 0;
     font-weight: 500;
   }
 
@@ -117,6 +125,7 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
+      min-width: 25%;
 
       @include bp(tablet) {
         max-width: 75%;
