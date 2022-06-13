@@ -4,6 +4,10 @@ import 'jquery';
 // Import everything from autoload
 import './autoload/**/*'
 
+//page transition and animations
+import barba from '@barba/core'
+import gsap  from 'gsap'
+
 // import local dependencies
 import Router from './util/Router';
 import common from './routes/common';
@@ -58,3 +62,80 @@ const routes = new Router({
 
 // Load Events
 jQuery(document).ready(() => routes.loadEvents());
+
+//page transitions
+// FIX !!! page changes before transition, scroll to top after transition
+window.addEventListener('load', () =>{
+
+  const loader = document.querySelector('.loader')
+
+  const loadingOut = (data) => {
+    gsap.from(data.current.container, {
+    })
+
+    gsap.from(loader,{
+      xPercent:0,
+      duration: 0.25,
+    },
+    gsap.to(loader, {
+      xPercent:-100,
+      duration:0.25,
+    })
+    )
+  }
+
+  const loadingIn = (data) => {
+    gsap.from(data.current.container ,{
+    })
+    gsap.to(loader, {
+      duration: 0.45,
+      delay: 0.75,
+      ease: 'easeInOut',
+      xPercent:-200,
+    })
+  }
+
+
+
+
+  barba.init({
+    schema: {
+      prefix: 'data-barba',
+      wrapper: 'wrapper',
+      debug:true,
+      sync: true,
+    },
+    transitions: [{
+      name: 'load',
+      to: {namespace: ['front-page','about-us','contact-us','houses','residents-and-relatives','caseworker']},
+
+      before(data){
+        gsap.from(data.next.container, {
+          opacity:0,
+        })
+      loadingOut(data);
+      },
+
+      leave() {
+
+
+      },
+
+      beforeEnter(data){
+        gsap.from(data.current.container, {
+          opacity:0,
+          duration: 0.5,
+        })
+      },
+
+      enter(data) {
+        loadingIn(data)
+      },
+    }],
+  })
+})
+
+barba.hooks.enter((data) => {
+  console.log(data);
+});
+

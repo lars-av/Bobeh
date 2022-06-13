@@ -8,7 +8,7 @@
 
 
 {{-- Side navigation --}}
-  <div class="wrapper-large">
+  <div class="wrapper-large"data-barba="container" data-barba-namespace="residents-and-relatives">
     @if ("true" == "true")
     <div class="wrap-side-nav">
       <div class="side-nav">

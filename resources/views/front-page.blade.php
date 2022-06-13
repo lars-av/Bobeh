@@ -9,6 +9,7 @@
 @section('content')
        {{-- @include('partials.page-header')--}}
 
+<div data-barba="container" data-barba-namespace="front-page">
 
 @foreach ($flexibleContent as $fc)
 @if ($fc['acf_fc_layout'] == 'section:_header_section')
@@ -32,5 +33,7 @@
 
 @include('partials/caseworker.reachout')
 @include('partials.content-front-page')
+
+</div>
 
 @endsection
