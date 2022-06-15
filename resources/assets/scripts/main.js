@@ -39,11 +39,14 @@ import
   faPeopleCarryBox,
   faHandHoldingHeart,
   faLocationPin,
+  faPersonCircleCheck,
+  faFileCirclePlus,
+  faCommentsDollar,
 } from '@fortawesome/free-solid-svg-icons';
 
 // add the imported icons to the library
 library.add(faFacebook, faTwitter,faPerson,faScrewdriverWrench,faSeedling,faUserTie,faFileCircleCheck, faCircleCheck, faCircle,faArrowUpRightFromSquare,faPhone,faEnvelope,faHouseChimneyMedical,faUserLarge,faClock,faUser,faPeopleCarryBox,
-  faHandHoldingHeart,faLocationPin);
+  faHandHoldingHeart,faLocationPin, faPersonCircleCheck, faFileCirclePlus, faCommentsDollar);
 
 // tell FontAwesome to watch the DOM and add the SVGs when it detects icon markup
 dom.watch();
