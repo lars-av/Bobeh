@@ -8,8 +8,6 @@
       @foreach ($fc['repeater_text_field_and_icon'] as $rf)
       <div class="infographic-process">
         {!!$rf['icon']!!}
-        {{-- <p>{{$rf['icon']}}</p> --}}
-        {{-- <i class="fa-solid fa-person"></i> --}}
         <h5>
           {{$rf['title']}}
         </h5>
@@ -22,7 +20,7 @@
     @endif
 
     @if ($fc['button_text'])
-    <a href="{{$fc['button_link']}}" class="btnRounded">{{$fc['button_text']}}</a>
+    <a href="" class="btnRounded">{{$fc['button_text']}}</a>
     @endif
 
 </section>
