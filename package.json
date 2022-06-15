@@ -76,12 +76,9 @@
     "yargs": "^16.1.0"
   },
   "dependencies": {
-    "@barba/core": "^2.9.7",
-    "@barba/prefetch": "^2.1.10",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
-    "gsap": "^3.10.4",
     "jquery": "^3.3.1",
     "swiper": "^8.1.5"
   }

@@ -11,7 +11,7 @@
      {!! $fc['list'] !!}
      @if ($fc['optional_button_text'])
      <div style="display: block;">
-      <a href="{{$fc['optional_button_link']['url']}}" class="btnRounded">{{$fc['optional_button_text']}}</a>
+      <a href="{{$fc['optional_button_link']}}" class="btnRounded">{{$fc['optional_button_text']}}</a>
     </div>
      @endif
 
