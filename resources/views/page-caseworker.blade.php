@@ -9,7 +9,7 @@
 
     @if ("true" == "true")
     <div class="wrap-side-nav">
-      <div class="side-nav">
+      <div class="side-nav" data-barba-namespace="side-navigation">
         <ul>
           @foreach ($flexibleContent as $sh)
           @if ($sh['section_name'])

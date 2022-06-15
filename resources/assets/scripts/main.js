@@ -78,6 +78,12 @@ var links = document.querySelectorAll('a[href]');
 	}
 
 
+  //active navigationLinks
+  let navigationLinks = document.querySelectorAll('.navigation li')
+console.log(navigationLinks)
+console.log(window.location)
+
+
 //page transitions
 // FIX !!! page changes before transition, scroll to top after transition
 window.addEventListener('load', () =>{
@@ -104,11 +110,49 @@ window.addEventListener('load', () =>{
     })
     gsap.to(loader, {
       duration: 0.45,
-      delay: 0.35,
+      delay: 0.45,
       ease: 'easeInOut',
       xPercent:-200,
     })
   }
+
+    const afterLoaded= (data) => {
+      console.log(data.next.container)
+      const navigation = data.next.container.querySelector('.wrap-side-nav .side-nav')
+      const content = data.next.container.querySelector('.wrap-side-content')
+      console.log(navigation)
+
+      gsap.fromTo(navigation, {
+        opacity:0,
+        duration:0.75,
+        rotation: 0.5,
+        xPercent: 30,
+      },
+      {
+        opacity:1,
+        duration:0.75,
+        rotation:0,
+        xPercent:0,
+
+      }),
+
+      gsap.fromTo(content,{
+        opacity:0,
+        duration:1,
+        rotation: 0.5,
+        xPercent: 30,
+
+      },
+      {
+        opacity:1,
+        duration:1,
+        rotation:0,
+        xPercent:0,
+        ease: 'easeIn',
+
+      }
+      )
+    }
 
 
 
@@ -125,20 +169,22 @@ window.addEventListener('load', () =>{
       name: 'load',
       to: {namespace: ['front-page','about-us','contact-us','houses','residents-and-relatives','caseworker','navigation']},
 
-      before(data){
+      before(){
+    },
+
+      leave(data) {
+
       const done = this.async()
       currentPage = [];
       currentPage.push(data.next.namespace.split('-').join(' '))
       document.getElementById('page-loader').textContent = currentPage[0]
-      console.log(currentPage)
+
+
       loadingOut(data);
+
       setTimeout( () => {
         done();
-      }, 500)
-    },
-
-      leave() {
-
+      }, 750)
 
       },
 
@@ -151,12 +197,21 @@ window.addEventListener('load', () =>{
 
       enter(data) {
         loadingIn(data);
+        const done = this.async()
+        setTimeout( () => {
+          done();
+        }, 10)
+      },
+      afterEnter(data) {
+        afterLoaded(data)
       },
     }],
+
   })
 })
 
-barba.hooks.beforeLeave(() => {
+barba.hooks.leave(() => {
+
   let scrollX = 0
   let scrollY = 0
 
@@ -164,5 +219,8 @@ barba.hooks.beforeLeave(() => {
     history.scrollRestoration = 'manual'
   }
 
-  window.scrollTo(scrollX, scrollY)
+  setTimeout( () => {
+    window.scrollTo(scrollX, scrollY)
+  },200)
 });
+console.log(window.href)
