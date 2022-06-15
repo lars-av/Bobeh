@@ -14,7 +14,7 @@
 
   .infographics-grid {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 
     .infographic-column {
       display: flex;
@@ -74,6 +74,10 @@
 
 .image-half-width {
   width: 100%;
+
+  svg {
+    color: $brand-primary;
+  }
 
   img {
     object-fit: cover;
@@ -141,7 +145,7 @@
   .tilbudportal-link {
     display: flex;
     margin: 1rem 0;
-    color: $brand-primary;
+    color: $brand-primary !important;
     max-width: 50px;
   }
 }
@@ -291,3 +295,4 @@
     padding: 0.5rem 0;
   }
 }
+
