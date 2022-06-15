@@ -6,6 +6,7 @@ import './autoload/**/*'
 
 //page transition and animations
 import barba from '@barba/core'
+import barbaPrefetch from '@barba/prefetch'
 import gsap  from 'gsap'
 
 // import local dependencies
@@ -62,6 +63,20 @@ const routes = new Router({
 
 // Load Events
 jQuery(document).ready(() => routes.loadEvents());
+let currentPage = []
+
+var links = document.querySelectorAll('a[href]');
+		var cbk = function(e) {
+    if(e.currentTarget.href === window.location.href) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+	};
+
+	for(var i = 0; i < links.length; i++) {
+		links[i].addEventListener('click', cbk);
+	}
+
 
 //page transitions
 // FIX !!! page changes before transition, scroll to top after transition
@@ -89,7 +104,7 @@ window.addEventListener('load', () =>{
     })
     gsap.to(loader, {
       duration: 0.45,
-      delay: 0.75,
+      delay: 0.35,
       ease: 'easeInOut',
       xPercent:-200,
     })
@@ -98,6 +113,7 @@ window.addEventListener('load', () =>{
 
 
 
+  barba.use(barbaPrefetch)
   barba.init({
     schema: {
       prefix: 'data-barba',
@@ -107,14 +123,19 @@ window.addEventListener('load', () =>{
     },
     transitions: [{
       name: 'load',
-      to: {namespace: ['front-page','about-us','contact-us','houses','residents-and-relatives','caseworker']},
+      to: {namespace: ['front-page','about-us','contact-us','houses','residents-and-relatives','caseworker','navigation']},
 
       before(data){
-        gsap.from(data.next.container, {
-          opacity:0,
-        })
+      const done = this.async()
+      currentPage = [];
+      currentPage.push(data.next.namespace.split('-').join(' '))
+      document.getElementById('page-loader').textContent = currentPage[0]
+      console.log(currentPage)
       loadingOut(data);
-      },
+      setTimeout( () => {
+        done();
+      }, 500)
+    },
 
       leave() {
 
@@ -129,13 +150,19 @@ window.addEventListener('load', () =>{
       },
 
       enter(data) {
-        loadingIn(data)
+        loadingIn(data);
       },
     }],
   })
 })
 
-barba.hooks.enter((data) => {
-  console.log(data);
-});
+barba.hooks.beforeLeave(() => {
+  let scrollX = 0
+  let scrollY = 0
 
+  if(history.scrollRestoration) {
+    history.scrollRestoration = 'manual'
+  }
+
+  window.scrollTo(scrollX, scrollY)
+});

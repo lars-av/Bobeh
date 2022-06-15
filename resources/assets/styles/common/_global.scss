@@ -10,13 +10,24 @@
 .loader {
   transform: translateX(100%);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: fixed;
   height: 100%;
   width: 100%;
   background-color: $brand-primary;
-  z-index: 100;
+  z-index: 1000;
+
+  img {
+    transform: scale(0.75);
+  }
+}
+
+#page-loader {
+  z-index: 1001;
+  color: white;
+  font-size: 3rem;
 }
 
 .main {
