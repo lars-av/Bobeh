@@ -11,7 +11,7 @@
             <h3 class="margin-2-y">{{$rt['text_field_title']}}</h3>
             {!! $rt['text_field'] !!}
             @if ($rt['optional_button_text'])
-            <a href="{{$rt['optional_button_link']}}" class="btnRounded" style="margin-top: 1.5rem;"> {{$rt['optional_button_text']}}</a>
+            <a href="{{$rt['optional_button_link']['url']}}" class="btnRounded" style="margin-top: 1.5rem;"> {{$rt['optional_button_text']}}</a>
             @endif
             </div>
           </div>

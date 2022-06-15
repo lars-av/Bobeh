@@ -9,7 +9,7 @@
 </div>
 <div>
   @if ($fc['button_text'])
-  <a href="{{$fc['button_link']}}" class="btnRounded">{{$fc['button_text']}} </a>
+  <a href="{{$fc['button_link']['url']}}" class="btnRounded">{{$fc['button_text']}} </a>
   @endif
 </div>
 

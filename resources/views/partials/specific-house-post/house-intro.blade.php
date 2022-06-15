@@ -10,24 +10,27 @@
 
                 @if ($house['feature'])
                 @foreach ($house['feature'] as $hf)
-                <h6><i class="fa-solid fa-house-chimney-medical"></i>{{$hf['individual_feature']}}</h6>
+                <div class="icon-layout" style ="display: flex;">
+                  {!!$hf['icon']!!}
+                  <h6>
+                    {{$hf['individual_feature']}}
+                  </h6>
+                </div>
                 @endforeach
                 @endif
-      
+
             </div>
             <div class="spots-section">
+              <h3>Spots</h3>
                 <ul>
                     @if ($house['available_spots'] > 0)
                     available spots {{$house['available_spots']}}
-                    @else 
+                    @else
                     No available spots currently
                     @endif
-                    
-                
-                    <p><b>Spots</b></p>
                     <ul>
                         @foreach ($house['types_of_spots'] as $spot)
-                          <li><b>§{{$spot['paragraph_number']}}</b> {{$spot['paragraph_description']}} </li>  
+                          <li><b>§{{$spot['paragraph_number']}}</b> {{$spot['paragraph_description']}} </li>
                         @endforeach
                         <li></li>
                     </ul>
