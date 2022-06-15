@@ -12,8 +12,7 @@
     <div class="infographics-grid">
       @foreach ($fc['repeatable_textfield_type_1_'] as $tf)
       <div class="infographic-column">
-        {!!$tf['icon']!!}
-        <h4 class="h4-caseworker"> {{$tf['textfield_title']}} </h4>
+        <h4 class="h4-caseworker"> <i class="fa-solid fa-circle"></i> {{$tf['textfield_title']}} </h4>
         <p class="action-plan-grid-p"> {{$tf['textfield_paragraph']}}</p>
       </div>
       @endforeach
