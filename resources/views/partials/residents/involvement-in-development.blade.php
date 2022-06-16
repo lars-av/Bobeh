@@ -18,7 +18,7 @@
         <h3>{{$rl['text_field_title']}}</h3>
          {!! $rl['text_field'] !!}
         </div>
-          <img src="http://bobehandling.test/wp-content/uploads/2022/05/Purkaervej-scaled.jpg" alt="people-smiling">
+          <img src="https://freesvg.org/img/idee.png" alt="people-smiling">
       </div>
     </div>
     @endforeach
