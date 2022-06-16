@@ -15,7 +15,9 @@
       @endforeach
     </div>
     @if ($fc['additional_info'])
-    <p>{{$fc['additional_info']}}</p>
+    <p>
+      
+      {{$fc['additional_info']}}</p>
     @endif
 
     @if ($fc['button_text'])

@@ -22,7 +22,7 @@
   @endif
 
     {{-- Content --}}
-<div  @if("true" == "true") class="wrap-side-content" @else class="wrap-only-content" @endif>
+<div  @if("true" == "true") class="wrap-side-content caseworker-page" @else class="wrap-only-content" @endif>
 
 @include('partials/caseworker.hero-text')
 

@@ -257,9 +257,12 @@ button {
   }
 
   .alternate-child {
-    margin: 4rem 0;
     display: flex;
     gap: 0 2rem;
+
+    &:not(:first-child) {
+      margin-top: $spacer;
+    }
 
     &:nth-child(odd) {
       display: flex;
