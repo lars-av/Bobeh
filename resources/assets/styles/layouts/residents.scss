@@ -1,10 +1,3 @@
-.resident-page {
-  h2 {
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-  }
-}
-
 * {
   scroll-behavior: smooth;
 }
@@ -20,11 +13,15 @@
 .image-full-width {
   max-width: 100%;
 
+  h2 {
+    margin: 1rem 0;
+  }
+
   img {
     object-fit: cover;
     width: 100%;
-    height: 40vh;
-    border-radius: $border-radius-small;
+    height: 500px;
+    border-radius: 1rem;
     overflow: hidden;
   }
 
@@ -89,10 +86,6 @@
 
   img {
     width: 100%;
-    object-fit: cover;
-    height: 40vh;
-    border-radius: $border-radius-small;
-    margin-top: $spacer-small;
   }
 }
 
@@ -116,18 +109,14 @@
 }
 
 .infographics {
-  margin-top: 4rem;
+  margin: 4rem 0;
   width: 100%;
 
   #process {
-    padding: 2rem;
+    padding: 4rem;
     border-radius: 1rem;
     background-color: $brand-primary;
     margin-bottom: 1rem;
-  }
-
-  a {
-    margin-top: $spacer;
   }
 
   h3 {

@@ -23,7 +23,7 @@
   @endif
 
     {{-- Content --}}
-    <div  @if("true" == "true") class="wrap-side-content resident-page" @else class="wrap-only-content" @endif>
+    <div  @if("true" == "true") class="wrap-side-content" @else class="wrap-only-content" @endif>
 
 
 @include('partials/residents.hero-text')
