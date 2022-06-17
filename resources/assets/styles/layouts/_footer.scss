@@ -3,8 +3,9 @@ footer {
   border-top: 2px solid $brand-primary;
   padding-top: $spacer;
 
-  .fa-twitter {
+  svg {
     color: $brand-primary;
+    margin-right: 0.5rem;
   }
 
   h4 {
