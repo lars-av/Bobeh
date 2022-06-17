@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('content')
-<input type="checkbox" id="checkBox" name="ticked" onClick= >
 
 @php
     $flexibleContent = get_field('flexiblecontent')
