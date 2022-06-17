@@ -5,7 +5,7 @@ $flexibleContent = get_field('flexible_content')
 @endphp
 
 {{-- Side navigation --}}
-  <div class="wrapper-large">
+  <div class="wrapper-large" data-barba="container" data-barba-namespace="about-us">
     @if ("true" == "true")
     <div class="wrap-side-nav">
       <div class="side-nav">
