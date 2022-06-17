@@ -251,8 +251,6 @@ button {
 //Alternate sections
 
 .alternate {
-  margin: 2rem;
-
   h3 {
     color: $brand-primary;
     margin: 1rem 0;
@@ -264,7 +262,6 @@ button {
     &:nth-child(odd) {
       display: flex;
       flex-direction: row;
-      align-items: center;
 
       @include bp(tabletland) {
         flex-direction: column;
@@ -282,12 +279,8 @@ button {
     }
 
     .image-container {
-      display: flex;
-      flex-direction: column;
-
       img {
-        flex: 1;
-        border-radius: 1rem;
+        border-radius: $border-radius-small;
         width: 100%;
       }
 
@@ -301,9 +294,12 @@ button {
     }
 
     .alternate-text {
-      margin: 1rem 2rem;
       line-height: 1.5rem;
+<<<<<<< HEAD
       max-width: 40%;
+=======
+      flex: 50%;
+>>>>>>> parent of 95fb308 (Merge branch 'main' into LarsFixingBranch-Exam)
 
       @include bp(tabletland) {
         max-width: 100%;

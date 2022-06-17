@@ -11,7 +11,7 @@ $valueFlower = get_field('value_flower', 'options')
         </div>
           <div class="core-values-description flex-center">
           <h2>Core values</h2>
-          <p>We strive to create a safe and cozy home for our target group, where care, closeness and warmth are a natural part, so that the framework for self-development is an opportunity.</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad nihil cum alias architecto, ipsum earum delectus consectetur beatae harum vel similique! Facere aliquam cupiditate minima deleniti voluptas. Assumenda, delectus vel!</p>
           <a class="btnRounded" href="">Mission, Vision and Values</a>
           </div>
 

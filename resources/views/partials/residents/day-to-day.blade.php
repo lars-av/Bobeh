@@ -6,6 +6,7 @@
   <h3>{{$fc['list_section_title']}} </h3>
   <div class="infographics-grid">
 
+    @if ($fc['repeatable_list'])
     @foreach ($fc['repeatable_list'] as $rl)
     <div class="infographic-column">
       <h4>
@@ -15,6 +16,7 @@
       {!! $rl['list'] !!}
     </div>
     @endforeach
+    @endif
   </div>
 </div>
 @endif

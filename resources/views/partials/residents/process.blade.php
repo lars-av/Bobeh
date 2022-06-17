@@ -8,8 +8,6 @@
       @foreach ($fc['repeater_text_field_and_icon'] as $rf)
       <div class="infographic-process">
         {!!$rf['icon']!!}
-        {{-- <p>{{$rf['icon']}}</p> --}}
-        {{-- <i class="fa-solid fa-person"></i> --}}
         <h5>
           {{$rf['title']}}
         </h5>
@@ -22,11 +20,7 @@
     @endif
 
     @if ($fc['button_text'])
-<<<<<<< HEAD
     <a href="" class="btnRounded">{{$fc['button_text']}}</a>
-=======
-    <a href="{{$fc['button_link']['url']}}" class="btnRounded">{{$fc['button_text']}}</a>
->>>>>>> parent of 54248f0 (Merge branch 'main' into animate)
     @endif
 
 </section>
