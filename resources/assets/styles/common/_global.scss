@@ -279,6 +279,16 @@ button {
     }
 
     .image-container {
+      img {
+        border-radius: $border-radius-small;
+        width: 100%;
+<<<<<<< HEAD
+        height: 100%;
+        object-fit: cover;
+=======
+>>>>>>> parent of e82d37e (Merge pull request #41 from lars-av/LarsFixingBranch-Exam)
+      }
+
       h4 {
         color: $brand-primary;
         font-style: italic;
@@ -286,16 +296,15 @@ button {
         margin: 0.5rem 0;
         position: relative;
       }
-
-      img {
-        border-radius: $border-radius-small;
-        width: 100%;
-      }
     }
 
     .alternate-text {
       line-height: 1.5rem;
+<<<<<<< HEAD
+      flex: 50%;
+=======
       max-width: 40%;
+>>>>>>> parent of e82d37e (Merge pull request #41 from lars-av/LarsFixingBranch-Exam)
 
       @include bp(tabletland) {
         max-width: 100%;
