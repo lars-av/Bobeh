@@ -295,11 +295,7 @@ button {
 
     .alternate-text {
       line-height: 1.5rem;
-<<<<<<< HEAD
       max-width: 40%;
-=======
-      flex: 50%;
->>>>>>> parent of 95fb308 (Merge branch 'main' into LarsFixingBranch-Exam)
 
       @include bp(tabletland) {
         max-width: 100%;
