@@ -1,6 +1,7 @@
 <section id="{{str_replace(' ', '', $fc['section_name'])}}">
   <h2>{{$fc['section_name']}}</h2>
-{!!$fc['section_description'] !!}
+
+  <p class="text-field">{!!$fc['section_description'] !!}</p>
   <div class="infographics" id="process-banner">
     <div class="infographics-grid" id="process">
 
@@ -15,9 +16,7 @@
       @endforeach
     </div>
     @if ($fc['additional_info'])
-    <p>
-      
-      {{$fc['additional_info']}}</p>
+    <p class="text-field" style="margin-bottom: 0.5rem;">{{$fc['additional_info']}}</p>
     @endif
 
     @if ($fc['button_text'])

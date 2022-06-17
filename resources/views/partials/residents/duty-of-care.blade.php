@@ -1,5 +1,5 @@
 <section id="{{str_replace(' ', '', $fc['section_name'])}}">
-  <h2>{{$fc['section_name']}}</h2>
+  <h2 style="margin: 1rem 0;">{{$fc['section_name']}}</h2>
   <div class="duty-of-care">
     <div class="image">
       <p class="line-height">

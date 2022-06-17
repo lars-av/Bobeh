@@ -70,6 +70,7 @@ p {
   font-size: 1.1rem;
   font-family: "Montserrat", sans-serif;
   line-height: 1.7rem;
+  padding: 0.5rem 0;
 }
 
 a {
@@ -196,7 +197,6 @@ button {
 
   .wrap-side-content {
     width: 60%;
-    max-width: 900px;
     margin: 0 4rem;
 
     @include bp(tabletland) {
@@ -257,12 +257,7 @@ button {
   }
 
   .alternate-child {
-    display: flex;
-    gap: 0 2rem;
-
-    &:not(:first-child) {
-      margin-top: $spacer;
-    }
+    margin: 4rem 0;
 
     &:nth-child(odd) {
       display: flex;
@@ -287,8 +282,11 @@ button {
       img {
         border-radius: $border-radius-small;
         width: 100%;
+<<<<<<< HEAD
         height: 100%;
         object-fit: cover;
+=======
+>>>>>>> parent of e82d37e (Merge pull request #41 from lars-av/LarsFixingBranch-Exam)
       }
 
       h4 {
@@ -302,7 +300,11 @@ button {
 
     .alternate-text {
       line-height: 1.5rem;
+<<<<<<< HEAD
       flex: 50%;
+=======
+      max-width: 40%;
+>>>>>>> parent of e82d37e (Merge pull request #41 from lars-av/LarsFixingBranch-Exam)
 
       @include bp(tabletland) {
         max-width: 100%;
