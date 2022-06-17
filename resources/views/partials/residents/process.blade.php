@@ -18,16 +18,12 @@
     </div>
     @if ($fc['additional_info'])
     <p>
-      
+
       {{$fc['additional_info']}}</p>
     @endif
 
     @if ($fc['button_text'])
-<<<<<<< HEAD
-    <a href="" class="btnRounded">{{$fc['button_text']}}</a>
-=======
     <a href="{{$fc['button_link']['url']}}" class="btnRounded">{{$fc['button_text']}}</a>
->>>>>>> parent of 54248f0 (Merge branch 'main' into animate)
     @endif
 
 </section>
