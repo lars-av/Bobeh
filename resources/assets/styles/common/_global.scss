@@ -251,8 +251,6 @@ button {
 //Alternate sections
 
 .alternate {
-  margin: 2rem;
-
   h3 {
     color: $brand-primary;
     margin: 1rem 0;
@@ -269,7 +267,6 @@ button {
     &:nth-child(odd) {
       display: flex;
       flex-direction: row;
-      align-items: center;
 
       @include bp(tabletland) {
         flex-direction: column;
@@ -287,12 +284,8 @@ button {
     }
 
     .image-container {
-      display: flex;
-      flex-direction: column;
-
       img {
-        flex: 1;
-        border-radius: 1rem;
+        border-radius: $border-radius-small;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -308,10 +301,8 @@ button {
     }
 
     .alternate-text {
-      margin: 1rem 2rem;
       line-height: 1.5rem;
       flex: 50%;
-      max-width: 40%;
 
       @include bp(tabletland) {
         max-width: 100%;

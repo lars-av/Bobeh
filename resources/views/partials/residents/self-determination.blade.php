@@ -6,7 +6,6 @@
         <div class="alternate-child">
           <div class="image-container">
             <img src="{{$rt['image']['sizes']['large']}}" class="living-conditions-img-2"alt="{{$rt['image']['alt']}}">
-            <h4>quote</h4>
           </div>
           <div class="alternate-text">
             <h3 class="margin-2-y">{{$rt['text_field_title']}}</h3>
