@@ -70,7 +70,6 @@ p {
   font-size: 1.1rem;
   font-family: "Montserrat", sans-serif;
   line-height: 1.7rem;
-  padding: 0.5rem 0;
 }
 
 a {
@@ -197,6 +196,7 @@ button {
 
   .wrap-side-content {
     width: 60%;
+    max-width: 900px;
     margin: 0 4rem;
 
     @include bp(tabletland) {
@@ -225,6 +225,7 @@ button {
 //Header of the section
 .header-text {
   margin: 2rem;
+  color: red;
 
   h1 {
     max-width: 20ch;
@@ -251,20 +252,22 @@ button {
 //Alternate sections
 
 .alternate {
-  margin: 2rem;
-
   h3 {
     color: $brand-primary;
     margin: 1rem 0;
   }
 
   .alternate-child {
-    margin: 4rem 0;
+    display: flex;
+    gap: 0 2rem;
+
+    &:not(:first-child) {
+      margin-top: $spacer;
+    }
 
     &:nth-child(odd) {
       display: flex;
       flex-direction: row;
-      align-items: center;
 
       @include bp(tabletland) {
         flex-direction: column;
@@ -282,13 +285,12 @@ button {
     }
 
     .image-container {
-      display: flex;
-      flex-direction: column;
-
       img {
-        flex: 1;
-        border-radius: 1rem;
+        border-radius: $border-radius-small;
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+        flex: 50%;
       }
 
       h4 {
@@ -301,9 +303,8 @@ button {
     }
 
     .alternate-text {
-      margin: 1rem 2rem;
       line-height: 1.5rem;
-      max-width: 40%;
+      flex: 50%;
 
       @include bp(tabletland) {
         max-width: 100%;
