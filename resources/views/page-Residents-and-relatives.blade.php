@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('content')
-<input type="checkbox" id="checkBox" name="ticked" onClick= >
 
 @php
     $flexibleContent = get_field('flexiblecontent')
@@ -8,9 +7,9 @@
 
 
 {{-- Side navigation --}}
-  <div class="wrapper-large"data-barba="container" data-barba-namespace="residents-and-relatives">
+  <div class="wrapper-large">
     @if ("true" == "true")
-    <div class="wrap-side-nav" data-barba-namespace="side-navigation">
+    <div class="wrap-side-nav">
       <div class="side-nav">
         <ul>
           @foreach ($flexibleContent as $sh)
@@ -24,7 +23,7 @@
   @endif
 
     {{-- Content --}}
-    <div  @if("true" == "true") class="wrap-side-content" @else class="wrap-only-content" @endif >
+    <div  @if("true" == "true") class="wrap-side-content" @else class="wrap-only-content" @endif>
 
 
 @include('partials/residents.hero-text')

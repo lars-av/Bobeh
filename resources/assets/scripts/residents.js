@@ -22,10 +22,9 @@ const sections = document.querySelectorAll('section')
 for (let i = 0 ; i< sections.length ; i++) {
 
   window.addEventListener('scroll',function () {
-    //  const activeSection =  sections.find(section =>  0< (section.getBoundingClientRect().y - window.innerHeight/2) < 250)
-    //   console.log(activeSection)
+  //  const activeSection =  sections.find(section =>  0< (section.getBoundingClientRect().y - window.innerHeight/2) < 250)
+  //   console.log(activeSection)
 
-    console.log(sections)
     sections.forEach(section => {
     const sectionPos =  section.getBoundingClientRect()
     if ( sectionPos.y < window.innerHeight/3 && sectionPos.y > -10 ) {
@@ -71,8 +70,5 @@ flowerValues.addEventListener('load', () => {
   })
   coreValues.appendChild(svgValues)
 })
-
-
-// active in navigation bar
 
 

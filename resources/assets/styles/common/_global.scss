@@ -7,32 +7,6 @@
   font-family: "Montserrat", sans-serif;
 }
 /* stylelint-disable no-descending-specificity */
-.loader {
-  transform: translateX(100%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background-color: $brand-primary;
-  z-index: 1000;
-
-  img {
-    transform: scale(0.75);
-  }
-}
-
-#page-loader {
-  z-index: 1001;
-  color: white;
-  font-size: 3rem;
-}
-
-.main {
-  overflow-x: hidden;
-}
 
 .current_page_item {
   a {
@@ -187,7 +161,7 @@ button {
       margin: 4rem 0;
       top: 10%;
       width: 20%;
-      z-index: 50;
+      z-index: 800;
 
       a {
         color: black;
@@ -308,8 +282,6 @@ button {
       img {
         border-radius: $border-radius-small;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
       }
 
       h4 {
@@ -323,7 +295,7 @@ button {
 
     .alternate-text {
       line-height: 1.5rem;
-      width: 50%;
+      max-width: 40%;
 
       @include bp(tabletland) {
         max-width: 100%;

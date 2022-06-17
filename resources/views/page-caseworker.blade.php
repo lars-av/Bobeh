@@ -5,11 +5,11 @@
 @endphp
 
 {{-- Side navigation --}}
-  <div class="wrapper-large"data-barba="container" data-barba-namespace="caseworker">
+  <div class="wrapper-large">
 
     @if ("true" == "true")
     <div class="wrap-side-nav">
-      <div class="side-nav" data-barba-namespace="side-navigation">
+      <div class="side-nav">
         <ul>
           @foreach ($flexibleContent as $sh)
           @if ($sh['section_name'])

@@ -29,7 +29,7 @@
 $logo = get_field('logo', 'options')
 @endphp
 
-<header data-component="header"  @if (is_front_page())front-page @endif class="page-header header">
+<header @if (is_front_page())front-page @endif class="page-header header">
   <div class="page-header__top">
     <a href="/">
       <div class='page-header__logo'>
