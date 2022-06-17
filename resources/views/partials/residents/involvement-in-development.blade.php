@@ -18,7 +18,7 @@
         <h3>{{$rl['text_field_title']}}</h3>
          {!! $rl['text_field'] !!}
         </div>
-          <img src="https://freesvg.org/img/idee.png" alt="people-smiling">
+          <img src="{{$rl['icon_image']['sizes']['medium']}}" alt="people-smiling">
       </div>
     </div>
     @endforeach
