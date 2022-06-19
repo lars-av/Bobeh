@@ -154,9 +154,9 @@
   margin: 2rem 0;
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
 
   .divspecific-paragraph {
-    margin: 1rem;
     max-width: 40%;
   }
 }
@@ -165,7 +165,7 @@
 .reachout-section {
   background-color: $brand-primary;
   border-radius: 1rem;
-  padding: 4rem;
+  padding: 2rem;
   height: clamp(max-content, 30vh, 4rem);
   margin: 1rem 0;
   color: #fff;
